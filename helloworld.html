@@ -4,28 +4,35 @@
 <title>Hello Dio!</title>
 </head>
 <style>
+    /* Essas classes modifica algumas tags HTML diretamente */
     body{padding: 0 20px;}
     h1{text-align: center;}
     footer p{font-style: italic; font-weight: 600;}
+    /* Essas classes trazem as estilizações dos "comentários" do <main> */
     .eucomment{color: red;}
     .outroeucomment{color: blue;}
     .letzcodecomment{color: purple;}
+    /* Essas classes trazem os nomes de quem teria "comentado" no <main> usando pseudoelementos */
     .eucomment::before{content: "Eu: "; font-weight: bold;}
     .outroeucomment::before{content: "Outro eu: "; font-weight: bold;}
     .letzcodecomment::before{content: "LEtzCode: "; font-weight: bold;}
 </style>
 <body>
-
 <header>
     <h1>Olá Dio!!</h1> 
 </header>
 <main>
+    <!-- OBS: esses comentários são só uma piadinha para simular um grupo desenvolvedor usando o Git!
+        Não sou bipolar de verdade :D -->
     <p class="eucomment">Essa é uma pequena página html que fiz para me introduzir, e para demonstrar um
         arquivo no repositório. Aos que acessaram, espero que gostem de lorem ipsum ;). Aproveitei e
         adicionei um estilozinho na própria tag!</p>
     <p class="outroeucomment">Adicionei um parágrafo a mais de lorem ipsum, mas também fiz outras
         alterações de estilo..</p>
     <p class="letzcodecomment">Hm.. acho que dá para tornar esse site mais bonito, né?</p>
+    <p class="eucomment">Nossa! bem pensado!</p>
+    <p class="outroeucomment">Sempre dá para melhorar :) . Obg!</p>
+    <p class="letzcodecomment">De nada! Até logo, Dio!</p>
 </main>
 <hr>
 <footer>
@@ -44,6 +51,5 @@
         massa."
     </p>
 </footer>
-
 </body>
 </html>
