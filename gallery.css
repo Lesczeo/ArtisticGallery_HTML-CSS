@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+*{
+    font-family: 'DynaPuff', cursive;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+}
+
+#Full{
+    text-align: -webkit-center;
+    display: inline-flex;
+    background-color: burlywood;
+    background-image: url("https://thumbs.dreamstime.com/b/o-pastel-amarelo-rabisca-textura-do-fundo-97445204.jpg");
+}
+
+#listaDeAtalhos{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa_ListaDeAtalhos{
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.botaoAtalhos{
+    background-color: chocolate;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10%;
+    margin-bottom: 25%;
+}
+
+.botaoAtalhos a{
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+
+.botaoTopo{
+    background-color: darksalmon;
+    color: antiquewhite;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: sienna;
+}
+
+#filtro{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    padding: 2% 4%;
+    margin: 0 50px 18px 50px;
+}
+
+.tituloSecao{
+    align-self: center;
+    margin: 0px;
+    font-size: 24px;
+    padding-bottom: 2%;
+    border-bottom: solid 4px darksalmon;
+}
+
+#filtro .tituloSecao{
+    width: 30%;
+    border-color: sienna;
+}
+
+.caixa_Filtros{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pesquisaFiltro{
+    background-color: antiquewhite;
+    min-width: 40%;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 50px;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+.caixa_botoesFiltroAno{
+    min-width: 58%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botaoFiltroAno{
+    background-color: chocolate;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 50px;
+    min-width: 23%;
+    font-weight: bold;
+}
+
+main section {
+    background-color: antiquewhite;
+    padding: 2% 4%;
+    margin: 0 50px 18px 50px;
+}
+
+.cartaoArte{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.caixa_Imagem_cartaoArte{
+    width: 52%;
+    align-self: center;
+}
+
+.preview_cartaoArte{
+    width: 85%;
+    align-self: center;
+    border: solid 4px;
+    border-color: darksalmon;
+}
+
+.descricao_cartaoArte{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.descricao_cartaoArte p{
+    margin: 2% 0px;
+}
+
+.preview_MResolucao{
+    font-weight: bold;
+    text-decoration: none;
+    color: chocolate;
+}
+
+main footer{
+    background-color: darksalmon;
+    font-size: small;
+    padding: 2% 4%;
+    margin: 0 50px;
+}
+
+#lescLinkedInLink{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+main section:nth-child(even) {
+    background-color: burlywood;  
+}
+
+ main section:nth-child(even) .tituloSecao{
+    border-bottom: solid 4px sienna;
+}
+
+main section:nth-child(even) .preview_cartaoArte{
+    border-color: sienna;
+}
+
+.zoomHover:hover{
+    transform: scale(1.05);
+    transition: 1.5s cubic-bezier(0, 0, 0, 1.2);
+    cursor: pointer;
+}
+
+.botaoAtalhos a:visited{
+    color: black;
+}
+
+.botaoGaleria a:visited{
+    color: black;
+}
+
+#lescLinkedInLink:visited{
+    color: black;
+}

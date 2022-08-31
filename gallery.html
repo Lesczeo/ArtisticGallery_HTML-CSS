@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Galeria artística</title>
+</head>
+<body id="Full">
+    <div id="listaDeAtalhos">
+        <div class="caixa_ListaDeAtalhos">
+            <div type="button" class="botaoAtalhos zoomHover" style="background-color: darksalmon;">
+                <a href="index.html" title="Volte para a entrada!">
+                    <img src="img/Icons8/open-door-50.png">
+                    <span>home</span>
+                </a>
+            </div>
+            <div type="button" class="botaoAtalhos zoomHover" title="Artes inspirados em animações!">
+                <a href="gallery.html">
+                    <img src="img/Icons8/mr-blobby-50.png">
+                    <span>Cartoons</span>
+                </a>
+            </div>
+            <div type="button" class="botaoAtalhos zoomHover" title="Artes inspiradas na idade média!">
+                <a href="gallery.html">
+                    <img src="img/Icons8/battle-50.png">
+                    <span>Medievais</span>
+                </a>
+            </div>
+            <div type="button" class="botaoAtalhos zoomHover" title="Algumas outras artes ..">
+                <a href="gallery.html">
+                    <img src="img/Icons8/treasure-chest-50.png">
+                    <span>Outros</span>
+                </a>
+            </div>
+        </div>
+        <div type="button" class="botaoTopo zoomHover" style="top: 0;">
+            <a href="#Full" title="Volte para o Topo!">
+                <img src="img/Icons8/up-2-50.png">
+            </a>
+        </div>
+    </div>
+    <main>
+        <nav id="filtro">
+            <div class="tituloSecao">
+                <b>Galeria artística</b>
+            </div>
+            <div class="caixa_Filtros">
+                <input type="text" id="pesquisaFiltro" placeholder="Selecione uma data">
+                <div class="caixa_botoesFiltroAno">
+                    <button type="button" class="botaoFiltroAno zoomHover" onclick="location.href='#\(-\) 2019'">(-) 2019</button>
+                    <button type="button" class="botaoFiltroAno zoomHover" onclick="location.href='#2020'">2020</button>
+                    <button type="button" class="botaoFiltroAno zoomHover" onclick="location.href='#2021'">2021</button>
+                    <button type="button" class="botaoFiltroAno zoomHover" onclick="location.href='#2022'">2022</button>
+                </div>
+            </div>
+        </nav>
+        <div id="caixa_CartoesArte">
+            
+            <section class="cartaoArte">
+                <div class="caixa_Imagem_cartaoArte">
+                    <img src="img/Wireframe002.png" class="preview_cartaoArte" alt="imagem de uma obra de arte">
+                </div>
+                <div class="descricao_cartaoArte">
+                    <div class="tituloSecao">
+                        <b>Super Drawing Example</b>
+                    </div>
+                    <p>"Esta imagem É de minha autoria. Ela representa o wireframe dessa página! Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                    <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
+                    <a href="#preview_cartaoArte" class="zoomHover preview_MResolucao">Maior Resolução</a>
+                </div>
+            </section>
+
+            <section class="cartaoArte">
+                <div class="caixa_Imagem_cartaoArte">
+                    <img src="https://thisartworkdoesnotexist.com/" class="preview_cartaoArte" alt="imagem de uma obra de arte">
+                </div>
+                <div class="descricao_cartaoArte">
+                    <div class="tituloSecao">
+                        <b>Super Drawing Example</b>
+                    </div>
+                    <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                    <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
+                    <a href="#thisartworkdoesnotexist.com/" class="zoomHover preview_MResolucao">Maior Resolução</a>
+                </div>
+            </section>
+            
+            <section class="cartaoArte">
+                <div class="caixa_Imagem_cartaoArte">
+                    <img src="https://thishorsedoesnotexist.com/" class="preview_cartaoArte" alt="imagem de uma obra de arte">
+                </div>
+                <div class="descricao_cartaoArte">
+                    <div class="tituloSecao">
+                        <b>Super Drawing Example</b>
+                    </div>
+                    <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                    <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
+                    <a href="#preview_cartaoArte" class="zoomHover preview_MResolucao">Maior Resolução</a>
+                </div>
+            </section>
+
+            <section class="cartaoArte">
+                <div class="caixa_Imagem_cartaoArte">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/I_have_a_special_plan.jpg" class="preview_cartaoArte" alt="imagem de uma obra de arte"> <!--  Easter Egg IHASPFTW -->
+                </div>
+                <div class="descricao_cartaoArte">
+                    <div class="tituloSecao">
+                        <b>Super Drawing Example</b>
+                    </div>
+                    <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                    <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
+                    <a href="#preview_cartaoArte" class="zoomHover preview_MResolucao">Maior Resolução</a>
+                </div>
+            </section>
+
+            <section class="cartaoArte">
+                <div class="caixa_Imagem_cartaoArte">
+                    <img src="https://thiscatdoesnotexist.com/" class="preview_cartaoArte" alt="imagem de uma obra de arte">
+                </div>
+                <div class="descricao_cartaoArte">
+                    <div class="tituloSecao">
+                        <b>Super Drawing Example</b>
+                    </div>
+                    <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                    <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
+                    <a href="#preview_cartaoArte" class="zoomHover preview_MResolucao">Maior Resolução</a>
+                </div>
+            </section>
+
+        </div>
+        <footer id="ultimaInfo">
+            <span>Propriedade de <a id="lescLinkedInLink" href="https://github.com/Lesczeo" target="_blank">Lucas Etzeo S. C.</a> - <i>2022</i></span>
+        </footer>   
+    </main>
+</body>
+</html>

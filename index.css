@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+*{
+    font-family: 'DynaPuff', cursive;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+}
+
+#Full{
+    text-align: -webkit-center;
+    display: inline-flex;
+    background-color: burlywood;
+    background-image: url("https://thumbs.dreamstime.com/b/o-pastel-amarelo-rabisca-textura-do-fundo-97445204.jpg");
+}
+
+#listaDeAtalhos{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa_ListaDeAtalhos{
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.botaoAtalhos{
+    background-color: chocolate;
+    color: antiquewhite;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10%;
+    margin-bottom: 25%;
+}
+
+.botaoAtalhos a{
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+
+.botaoTopo{
+    background-color: darksalmon;
+    color: antiquewhite;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: sienna;
+}
+
+main section {
+    background-color: darksalmon;
+    padding: 2% 4%;
+    margin: 0 50px 18px 50px;
+}
+
+#info1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao_Secao{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+#info1 .descricao_Secao{
+    margin-bottom: 0;
+}
+
+.tituloSecao{
+    align-self: center;
+    margin: 0px;
+    font-size: 24px;
+    padding-bottom: 2%;
+    border-bottom: solid 4px sienna;
+}
+
+#info1 .tituloSecao{
+    font-size: x-large;
+    width: 60%;
+}
+
+.paragrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#info1 .paragrafo{
+    margin-top: 2%;
+}
+
+.paragrafo p{
+    margin: 2% 0px;
+}
+
+.caixa_Imagem_Profile{
+    width: 35%;
+    align-self: center;
+}
+
+.imagem_Profile{
+    max-width: 85%;
+    align-self: center;
+    border: solid 4px;
+    border-color: sienna;
+}
+
+.caixa_cartaoFerramenta{
+    display: flex;
+}
+
+.cartaoFerramenta {
+    padding: 0px 2%;
+}
+
+.caixa_Imagem_cartaoFerramenta{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    margin: 10px 0px;
+}
+
+.caixa_Imagem_cartaoFerramenta img{
+    height: 100%;
+}
+
+.cartaoFerramenta p{
+    margin-bottom: 0;
+}
+
+.caixa_botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botaoGaleria{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 50px;
+    min-width: 30%;
+    font-weight: bold;
+}
+
+#lescLinkedInLink{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#site{
+    margin-bottom: 0px;
+}
+
+#site span{
+    font-size: small;
+}
+
+main section:nth-child(even) {  
+    background-color: antiquewhite;
+    border-color: black;
+}
+
+main section:nth-child(even) .tituloSecao{
+    border-color: darksalmon;
+}
+
+.zoomHover:hover{
+    transform: scale(1.05);
+    transition: 1.5s cubic-bezier(0, 0, 0, 1.2);
+    cursor: pointer;
+}
+
+.botaoAtalhos a:visited{
+    color: black;
+}
+
+.botaoGaleria a:visited{
+    color: black;
+}
+
+#lescLinkedInLink:visited{
+    color: black;
+}
