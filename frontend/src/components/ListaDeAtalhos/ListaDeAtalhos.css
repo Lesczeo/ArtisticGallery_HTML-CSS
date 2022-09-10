@@ -1,0 +1,47 @@
+#caixa_ListaDeAtalhos{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#listaDeAtalhos{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa_ListaDeAtalhos{
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.botaoAtalhos{
+    background-color: chocolate;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10%;
+    margin-bottom: 25%;
+}
+
+.botaoAtalhos a{
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+
+#botaoAtalhosEntrada{
+    background-color: darksalmon;
+}
+
+.botaoTopo{
+    top: 0;
+    background-color: darksalmon;
+    color: antiquewhite;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10%;
+}

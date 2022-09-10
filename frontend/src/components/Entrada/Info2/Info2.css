@@ -1,0 +1,22 @@
+.caixa_cartaoFerramenta{
+    display: flex;
+}
+
+.cartaoFerramenta {
+    padding: 0px 2%;
+}
+
+.caixa_Imagem_cartaoFerramenta{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    margin: 10px 0px;
+}
+
+.caixa_Imagem_cartaoFerramenta img{
+    height: 100%;
+}
+
+.cartaoFerramenta p{
+    margin-bottom: 0;
+}

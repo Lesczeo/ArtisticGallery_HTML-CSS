@@ -1,0 +1,13 @@
+#site{
+    margin-bottom: 0px;
+}
+
+#site span{
+    font-size: small;
+}
+
+#lescLinkedInLink{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}

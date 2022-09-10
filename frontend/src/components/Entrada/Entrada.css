@@ -1,0 +1,15 @@
+#mainEntrada section {
+    background-color: antiquewhite;
+}
+
+#mainEntrada section .tituloSecao {
+    border-color: darksalmon;
+}
+
+#mainEntrada section:nth-child(odd) {  
+    background-color: darksalmon;
+  }
+  
+#mainEntrada section:nth-child(odd) .tituloSecao{
+    border-color: sienna;
+  }

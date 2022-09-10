@@ -1,0 +1,128 @@
+#mainGallery section {
+    background-color: antiquewhite;
+}
+
+#mainGallery section:nth-child(even) {
+    background-color: burlywood;  
+}
+
+#mainGallery section:nth-child(even) .tituloSecao{
+    border-color: sienna;
+}
+
+#filtro{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    padding: 2% 4%;
+    margin: 0 50px 18px 50px;
+}
+
+#filtro .tituloSecao{
+    width: 30%;
+    border-color: sienna;
+}
+
+.caixa_Filtros{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pesquisaFiltro{
+    background-color: antiquewhite;
+    min-width: 40%;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 50px;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+.caixa_botoesFiltroAno{
+    min-width: 58%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botaoFiltroAno{
+    background-color: chocolate;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 50px;
+    min-width: 23%;
+    font-weight: bold;
+}
+
+.cartaoArte{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.caixa_Imagem_cartaoArte{
+    width: 52%;
+    align-self: center;
+}
+
+.preview_cartaoArte{
+    width: 85%;
+    align-self: center;
+    border: solid 4px;
+    border-color: darksalmon;
+}
+
+.descricao_cartaoArte{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.descricao_cartaoArte .tituloSecao{
+    border-color: darksalmon;
+}
+
+.descricao_cartaoArte p{
+    margin: 2% 0px;
+}
+
+.preview_MResolucao{
+    font-weight: bold;
+    text-decoration: none;
+    color: chocolate;
+}
+
+#mainGallery footer{
+    background-color: darksalmon;
+    font-size: small;
+    padding: 2% 4%;
+    margin: 0 50px;
+}
+
+#lescLinkedInLink{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#mainGallery section:nth-child(even) .preview_cartaoArte{
+    border-color: sienna;
+}
+
+.zoomHover:hover{
+    transform: scale(1.05);
+    transition: 1.5s cubic-bezier(0, 0, 0, 1.2);
+    cursor: pointer;
+}
+
+.botaoAtalhos a:visited{
+    color: black;
+}
+
+.botaoGaleria a:visited{
+    color: black;
+}
+
+#lescLinkedInLink:visited{
+    color: black;
+}

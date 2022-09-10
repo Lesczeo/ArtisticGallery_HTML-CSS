@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+* {
+  font-family: 'DynaPuff', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+#Masterpage{
+  width: 100%;
+  min-height: 100%;
+  text-align: -webkit-center;
+  display: inline-flex;
+  background-color: goldenrod;
+  background-image: url("https://thumbs.dreamstime.com/b/o-pastel-amarelo-rabisca-textura-do-fundo-97445204.jpg");
+}
+
+#Masterpage main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: sienna;
+}
+
+#Masterpage main section {
+  padding: 2% 4%;
+  margin: 0 50px 18px 50px;
+}
+
+.tituloSecao{
+  align-self: center;
+  margin: 0px;
+  font-size: 24px;
+  padding-bottom: 2%;
+  border-bottom: solid 4px;
+}
+
+.descricao_Secao{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  width: 60%
+}
+
+.paragrafo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paragrafo p{
+  margin: 2% 0px;
+}
+
+.zoomHover:hover{
+  transform: scale(1.05);
+  transition: 1.5s cubic-bezier(0, 0, 0, 1.2);
+  cursor: pointer;
+}
+
+.customVisitedButton:visited{
+  color: black;
+}
