@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+OBS: para instalar a pasta com os nodes do package.json (/node_modules), utilize antes de iniciar:
+
+### `npm install`
+
 In the project directory, you can run:
 
 ### `npm start`

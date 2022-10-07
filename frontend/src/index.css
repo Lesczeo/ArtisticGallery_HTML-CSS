@@ -12,49 +12,36 @@ body {
 
 #Masterpage{
   width: 100%;
-  min-height: 100%;
   text-align: -webkit-center;
   display: inline-flex;
   background-color: goldenrod;
   background-image: url("https://thumbs.dreamstime.com/b/o-pastel-amarelo-rabisca-textura-do-fundo-97445204.jpg");
 }
 
-#Masterpage main{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#Conteudo{
   width: 100%;
   background-color: sienna;
+  display: flex;
+  flex-direction: column;
 }
 
-#Masterpage main section {
+#Conteudo main section {
   padding: 2% 4%;
   margin: 0 50px 18px 50px;
 }
 
 .tituloSecao{
-  align-self: center;
-  margin: 0px;
-  font-size: 24px;
+  font-size: x-large;
   padding-bottom: 2%;
+  margin-bottom: 3%;
+  align-self: center;
   border-bottom: solid 4px;
 }
 
-.descricao_Secao{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3%;
-  width: 60%
-}
-
-.paragrafo{
+.caixa_Paragrafo{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.paragrafo p{
-  margin: 2% 0px;
 }
 
 .zoomHover:hover{
@@ -65,4 +52,24 @@ body {
 
 .customVisitedButton:visited{
   color: black;
+}
+
+@media (max-width: 950px) {
+  #Masterpage main section {
+    padding: 2% 3%;
+    margin: 0 18px 18px 18px;
+  }
+  .paragrafo p{
+    margin: 8px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  #Masterpage main section {
+    padding: 2% 2%;
+    margin: 0 12px 12px 12px;
+  }
+  .tituloSecao{
+    font-size: larger;
+  }
 }

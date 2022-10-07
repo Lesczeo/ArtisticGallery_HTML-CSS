@@ -1,9 +1,17 @@
 #site{
     margin-bottom: 0px;
+    font-size: smaller;
 }
 
 #site span{
     font-size: small;
+}
+
+#site p{
+    background-color: antiquewhite;
+    padding: 2% 0px;
+    border-radius: 10px;
+    margin-top: 0;
 }
 
 #lescLinkedInLink{

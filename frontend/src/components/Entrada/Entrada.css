@@ -1,15 +1,22 @@
+.descricao_Secao{
+  display: flex;
+  flex-direction: column;
+  width: 74%;
+  justify-content: space-between; /* 4K screens */
+}
+
 #mainEntrada section {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 #mainEntrada section .tituloSecao {
-    border-color: darksalmon;
+  border-color: darksalmon;
 }
 
-#mainEntrada section:nth-child(odd) {  
-    background-color: darksalmon;
-  }
+#mainEntrada section:nth-of-type(even) {  
+  background-color: darksalmon;
+}
   
-#mainEntrada section:nth-child(odd) .tituloSecao{
-    border-color: sienna;
-  }
+#mainEntrada section:nth-of-type(even) .tituloSecao{
+  border-color: sienna;
+}

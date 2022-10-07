@@ -1,5 +1,7 @@
 .caixa_cartaoFerramenta{
-    display: flex;
+    display: inline-grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    justify-content: space-between;
 }
 
 .cartaoFerramenta {
@@ -18,5 +20,29 @@
 }
 
 .cartaoFerramenta p{
-    margin-bottom: 0;
+    font-size: smaller;
+}
+
+@media (max-width: 950px) {
+
+    .caixa_cartaoFerramenta{
+        grid-template-columns: 48% 48%;
+    }
+
+    .cartaoFerramenta {
+        padding: 4% 2%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .caixa_cartaoFerramenta{
+        display: block;
+    }
+
+    .cartaoFerramenta {
+        padding: 2%;
+    }
+
 }

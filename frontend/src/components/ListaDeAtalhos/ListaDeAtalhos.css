@@ -45,3 +45,34 @@
     border-width: 0px;
     padding: 10%;
 }
+
+@media (max-width: 950px) {
+    #caixa_ListaDeAtalhos{
+        min-width: 12%;
+    }
+    #listaDeAtalhos{
+        margin: 2% 1%;
+    }
+    #listaDeAtalhos .botaoAtalhos{
+        padding: 7%;
+        margin-bottom: 20%;
+    }
+    #caixa_ListaDeAtalhos .botaoTopo{
+        padding: 7%;
+    }
+    #caixa_ListaDeAtalhos img{
+        max-width: 100%;
+    }
+  }
+  
+@media (max-width: 500px) {
+    #listaDeAtalhos{
+        margin: 3% 1%;
+    }
+    #listaDeAtalhos .botaoAtalhos{
+        margin-bottom: 30%;
+    }
+    #caixa_ListaDeAtalhos span {
+        display: none;
+    }
+  }

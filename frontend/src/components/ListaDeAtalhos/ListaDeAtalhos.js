@@ -1,10 +1,10 @@
 import './ListaDeAtalhos.css';
 // Icones:
-import i8ODoor from './img_Icons8/open-door-50.png';
-import i8MLobby from './img_Icons8/mr-blobby-50.png';
-import i8Battle from './img_Icons8/battle-50.png';
-import i8TChest from './img_Icons8/treasure-chest-50.png';
-import i8UP2 from './img_Icons8/up-2-50.png';
+import i8ODoor from '../../img/img_Icons8/open-door-50.png';
+import i8MLobby from '../../img/img_Icons8/mr-blobby-50.png';
+import i8Battle from '../../img/img_Icons8/battle-50.png';
+import i8TChest from '../../img/img_Icons8/treasure-chest-50.png';
+import i8UP2 from '../../img/img_Icons8/up-2-50.png';
 
 function ListaDeAtalhos() {
     return(
@@ -40,7 +40,7 @@ function ListaDeAtalhos() {
 
         {/* Botão que traz o usuário ao topo da página: */}
         <div type="button" className="botaoTopo zoomHover"  title="Volte para o Topo!">
-          <a href="#Masterpage">
+          <a href="#Masterpage" title="Volte para o topo!">
             <img src={i8UP2} alt=""></img>
           </a>
         </div>
