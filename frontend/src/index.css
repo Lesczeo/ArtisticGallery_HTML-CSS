@@ -15,7 +15,7 @@ body {
   text-align: -webkit-center;
   display: inline-flex;
   background-color: goldenrod;
-  background-image: url("https://thumbs.dreamstime.com/b/o-pastel-amarelo-rabisca-textura-do-fundo-97445204.jpg");
+  background-image: url('img/Wallpapers/TexturePers_SantaFeStucco002.png');
 }
 
 #Conteudo{
@@ -72,4 +72,7 @@ body {
   .tituloSecao{
     font-size: larger;
   }
+  /* #Conteudo{
+    background-image: url('img/Wallpapers/TexturePers_SantaFeStucco002.png');
+  } */
 }

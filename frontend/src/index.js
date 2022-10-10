@@ -11,8 +11,8 @@ root.render(
     <div id="Masterpage">
       <ListaDeAtalhos/>
       <div id="Conteudo">
-        <Entrada />
-        {/* <Gallery /> */}
+        {/* <Entrada /> */}
+        <Gallery />
       </div>
     </div>
   </React.StrictMode>

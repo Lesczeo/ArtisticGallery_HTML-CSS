@@ -1,0 +1,136 @@
+#filtro{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    padding: 2% 4%;
+    margin: 0 50px 18px 50px;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.botaoFiltroIcon{
+    display: none;
+}
+
+#filtro .tituloSecao{
+    width: 40%;
+    margin-bottom: 0px;
+    border-color: sienna;
+}
+
+.caixa_Filtros{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pesquisaFiltro{
+    background-color: antiquewhite;
+    min-width: 42%;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 50px;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+.caixa_botoesFiltro{
+    min-width: 55%;
+}
+
+.caixa_botoesFiltroAno{
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa_botoesFiltroTema{
+    display: none;
+}
+
+.botaoFiltroAno{
+    background-color: chocolate;
+    border-radius: 10px;
+    border-width: 0px;
+    height: 50px;
+    min-width: 23%;
+    font-weight: bold;
+}
+
+@media (max-width: 950px) {
+    
+    #filtro{
+        padding: 2% 3%;
+        margin: 0 18px 18px 18px;
+    }
+
+    #filtro .tituloSecao{
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .caixa_Filtros{
+        flex-direction: column;
+    }
+
+    #pesquisaFiltro{
+        min-width: 95%;
+        margin-bottom: 4%;
+    }
+
+    .caixa_botoesFiltroAno{
+        min-width: 100%;
+        padding-bottom: 2%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #filtro{
+        padding: 2% 2%;
+        margin: 0 12px 12px 12px;
+    }
+
+    .navegacao{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 4%;
+        margin-top: 2%;
+    }
+
+    .botaoFiltroIcon{
+        display: block;
+        width: 25%;
+        background-color: chocolate;
+        border-radius: 10px;
+        border-width: 0px;
+    }
+    
+    .botaoFiltroIcon img{
+        width: 45px;
+    }
+    
+    .caixa_botoesFiltro{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    
+    .caixa_botoesFiltroAno{
+        min-width: 55%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .caixa_botoesFiltroTema{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

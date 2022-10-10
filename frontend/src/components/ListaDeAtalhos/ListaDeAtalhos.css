@@ -66,7 +66,10 @@
   }
   
 @media (max-width: 500px) {
-    #listaDeAtalhos{
+    #caixa_ListaDeAtalhos {
+        display: none;
+    }
+    /* #listaDeAtalhos{
         margin: 3% 1%;
     }
     #listaDeAtalhos .botaoAtalhos{
@@ -74,5 +77,5 @@
     }
     #caixa_ListaDeAtalhos span {
         display: none;
-    }
+    } */
   }

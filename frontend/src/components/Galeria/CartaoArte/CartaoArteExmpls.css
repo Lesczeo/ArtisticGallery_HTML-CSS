@@ -1,0 +1,68 @@
+.cartaoArte{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.caixa_Imagem_cartaoArte{
+    width: 52%;
+    align-self: center;
+}
+
+.preview_cartaoArte{
+    width: 85%;
+    align-self: center;
+    border: solid 4px;
+    border-color: darksalmon;
+}
+
+.descricao_cartaoArte{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.descricao_cartaoArte .tituloSecao{
+    border-color: darksalmon;
+    font-size: larger;
+}
+
+.descricao_cartaoArte p{
+    margin: 2% 0px;
+}
+
+.preview_MResolucao{
+    font-weight: bold;
+    text-decoration: none;
+    color: chocolate;
+}
+
+@media (max-width: 950px) {
+    .caixa_Imagem_cartaoArte{
+        width: 50%;
+        margin-right: 4px;
+    }
+    .preview_cartaoArte{
+        width: 100%;
+        border-width: 2px;
+    }
+}
+  
+@media (max-width: 500px) {
+    .cartaoArte{
+        flex-direction: column;  
+    }
+    .caixa_Imagem_cartaoArte{
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    .descricao_cartaoArte{
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .descricao_cartaoArte{
+        width: 100%;
+    }
+}
