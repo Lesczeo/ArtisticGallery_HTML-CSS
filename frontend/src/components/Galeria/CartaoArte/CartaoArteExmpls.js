@@ -1,6 +1,6 @@
 import './CartaoArteExmpls.css';
 import Decal02 from '../../../img/Wireframe002.png';
-import DecalTEST from '../../Entrada/Info1/Banner001.png';
+import DecalTEST from '../../Entrada/Info1/Banner002.png';
 // "../../../img/OOPS_No_Valid_Image_V001.png"
 
 function WireframeExmpl() {
@@ -14,8 +14,8 @@ function WireframeExmpl() {
                     <b>Super Drawing Example</b>
                 </div>
                 <p>"Esta imagem É de minha autoria. Ela representa o wireframe dessa página! Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
-                <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
                 <a href="#preview_cartaoArte" className="zoomHover preview_MResolucao">Maior Resolução</a>
+                <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
             </div>
         </section>
     );
@@ -32,8 +32,8 @@ function PaintingExmpl() {
                     <b>Super Drawing Example</b>
                 </div>
                 <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                <a href="https://thisartworkdoesnotexist.com/" className="zoomHover preview_MResolucao" target="_blank" rel="noreferrer">Maior Resolução</a>
                 <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
-                <a href="#thisartworkdoesnotexist.com/" className="zoomHover preview_MResolucao">Maior Resolução</a>
             </div>
         </section>
     );
@@ -50,8 +50,8 @@ function HorseExmpl() {
                     <b>Super Drawing Example</b>
                 </div>
                 <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                <a href="https://thishorsedoesnotexist.com/" className="zoomHover preview_MResolucao" target="_blank" rel="noreferrer">Maior Resolução</a>
                 <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
-                <a href="#preview_cartaoArte" className="zoomHover preview_MResolucao">Maior Resolução</a>
             </div>
         </section>
     );
@@ -68,8 +68,8 @@ function EasterEggExmpl() {
                     <b>Super Drawing Example</b>
                 </div>
                 <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                <a href="https://upload.wikimedia.org/wikipedia/en/5/5e/I_have_a_special_plan.jpg" className="zoomHover preview_MResolucao" target="_blank" rel="noreferrer">Maior Resolução</a>
                 <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
-                <a href="#preview_cartaoArte" className="zoomHover preview_MResolucao">Maior Resolução</a>
             </div>
         </section>
     );
@@ -86,8 +86,8 @@ function CatExmpl() {
                     <b>Super Drawing Example</b>
                 </div>
                 <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
+                <a href="https://thiscatdoesnotexist.com/" className="zoomHover preview_MResolucao" target="_blank" rel="noreferrer">Maior Resolução</a>
                 <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
-                <a href="#preview_cartaoArte" className="zoomHover preview_MResolucao">Maior Resolução</a>
             </div>
         </section>
     );
@@ -104,8 +104,8 @@ function TESTINGExmpl() {
                     <b>Super Drawing Example</b>
                 </div>
                 <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
-                <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
                 <a href="#preview_cartaoArte" className="zoomHover preview_MResolucao">Maior Resolução</a>
+                <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
             </div>
         </section>
     );

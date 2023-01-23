@@ -11,10 +11,6 @@
     color: black;
 }
 
-#mainGallery section:nth-child(even) .preview_cartaoArte{
-    border-color: sienna;
-}
-
 #lescLinkedInLink:visited{
     color: black;
 }

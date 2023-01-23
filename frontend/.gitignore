@@ -18,6 +18,9 @@
 .env.test.local
 .env.production.local
 
+# Irá ignorar o "NOTASTarefas" no git. Negue a Negação individualmente se quiser enviar um arquivo .txt ao github:
+*.txt
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

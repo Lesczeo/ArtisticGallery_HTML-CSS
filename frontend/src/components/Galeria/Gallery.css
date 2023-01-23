@@ -2,12 +2,24 @@
     background-color: antiquewhite;
 }
 
+#mainGallery section .preview_cartaoArte{
+    border-color: burlywood;
+}
+
+#mainGallery section .tituloSecao{
+    border-color: burlywood;
+}
+
 #mainGallery section:nth-child(even) {
-    background-color: burlywood;  
+    background-color: peachpuff;  
+}
+
+#mainGallery section:nth-child(even) .preview_cartaoArte{
+    border-color: darksalmon;
 }
 
 #mainGallery section:nth-child(even) .tituloSecao{
-    border-color: sienna;
+    border-color: darksalmon;
 }
 
 /* .botaoAtalhos a:visited{

@@ -2,30 +2,29 @@
     display: none;
 }
 
+
 @media (max-width: 500px) {
     .botaoTopoMobile{
+        position: sticky;
+        bottom: 2%;
+        background-color: burlywood;
         display: block;
         border-radius: 10px;
-        border-width: 0px;
         padding: 2%;
         margin: 0 12px 12px 12px;
-        background-color: burlywood;
     }
     .botaoTopoMobile a{
         color: black;
         text-decoration: none;
     }
-    .link_botaoTopoMobile {
+    .caixa_botaoTopoMobile {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    .link_botaoTopoMobile img{
+    .caixa_botaoTopoMobile img{
         margin-left: 5px;
         width: 24px;
     }
-    /* .link_botaoTopoMobile::before {
-        content: "cat doesnt stop exploding";
-    } */
 }

@@ -14,21 +14,21 @@ function ListaDeBotoes() {
           <div className="caixa_botoes">
             {/* Uma grid que irá fazer o display dos filtros de acesso à galeria, por ano (e pelos temas/atalhos no mobile): */}
             <div className="botoesTemas">
-              <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">
+              <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton">
                 <img src={i8MLobby} alt=""></img>
               </button>
-              <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">
+              <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton">
                 <img src={i8Battle} alt=""></img>
               </button>
-              <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">
+              <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton">
                 <img src={i8TChest} alt=""></img>
               </button>
             </div>
             <div className="botoesAnos">
-              <button type="button" className="botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">(-) 2019</button>
-              <button type="button" className="botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">2020</button>
-              <button type="button" className="botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">2021</button>
-              <button type="button" className="botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">2022</button>
+              <button type="button" className="botaoAno zoomHover customVisitedButton">(-) 2019</button>
+              <button type="button" className="botaoAno zoomHover customVisitedButton">2020</button>
+              <button type="button" className="botaoAno zoomHover customVisitedButton">2021</button>
+              <button type="button" className="botaoAno zoomHover customVisitedButton">2022</button>
             </div>
           </div>
         </section>

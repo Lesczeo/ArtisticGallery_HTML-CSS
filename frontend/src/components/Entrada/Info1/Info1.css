@@ -19,14 +19,19 @@
 }
 
 #info .imagem_Profile{
-    max-width: 100%;
+    max-width: 75%;
     /* width: 52%; */
     align-self: center;
+}
+
+#info .imagem_Profile:hover{
+    transform: rotateY(180deg);
 }
 
 .descricao_Secao p{
     margin: 2% 0px;
 }
+
 
 @media (max-width: 950px) {
 

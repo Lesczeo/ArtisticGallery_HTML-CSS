@@ -6,16 +6,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
+/*Faz a tela ser totalmente preenchida (responsivo)*/
+html, body {
+  margin: 0px;
+  height: 100%;
+  background-color: goldenrod;
 }
 
-#Masterpage{
+#rootHome{
+  min-height: 100%; /*A tela é prejudicada por "height: 100%" se o conteúdo é a galeria de desenhos*/
   width: 100%;
   text-align: -webkit-center;
   display: inline-flex;
-  background-color: goldenrod;
-  background-image: url('img/Wallpapers/TexturePers_SantaFeStucco002.png');
+  background-image: url('./img/Wallpapers/TexturePers_SantaFeStucco002.png');
+  /* flex-direction: row-reverse;*/
 }
 
 #Conteudo{
@@ -46,7 +50,7 @@ body {
 
 .zoomHover:hover{
   transform: scale(1.05);
-  transition: 1.5s cubic-bezier(0, 0, 0, 1.2);
+  transition: 0.5s cubic-bezier(0, 0, 0, 1.2);
   cursor: pointer;
 }
 
@@ -55,7 +59,7 @@ body {
 }
 
 @media (max-width: 950px) {
-  #Masterpage main section {
+  #Conteudo main section {
     padding: 2% 3%;
     margin: 0 18px 18px 18px;
   }
@@ -65,14 +69,14 @@ body {
 }
 
 @media (max-width: 500px) {
-  #Masterpage main section {
-    padding: 2% 2%;
-    margin: 0 12px 12px 12px;
-  }
   .tituloSecao{
     font-size: larger;
   }
-  /* #Conteudo{
+  #Conteudo main section {
+    padding: 2% 2%;
+    margin: 0 12px 12px 12px;
+  }
+  /* #rootHome{
     background-image: url('img/Wallpapers/TexturePers_SantaFeStucco002.png');
   } */
 }

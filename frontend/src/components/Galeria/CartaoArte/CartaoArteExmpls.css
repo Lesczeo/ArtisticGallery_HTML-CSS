@@ -1,6 +1,7 @@
 .cartaoArte{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
 .caixa_Imagem_cartaoArte{
@@ -12,7 +13,6 @@
     width: 85%;
     align-self: center;
     border: solid 4px;
-    border-color: darksalmon;
 }
 
 .descricao_cartaoArte{
@@ -23,7 +23,6 @@
 }
 
 .descricao_cartaoArte .tituloSecao{
-    border-color: darksalmon;
     font-size: larger;
 }
 

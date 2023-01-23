@@ -8,10 +8,8 @@ function NavFiltro() {
     return(
         <nav id="filtro">
             <div className="navegacao">
-                <div type="button" class="botaoFiltroIcon">
-                    <a href='index.html' title="Volte para a entrada!">
-                        <img src={i8ODoor} alt=""></img>
-                    </a>
+                <div type="button" className="botaoFiltroIcon">
+                    <img src={i8ODoor} alt=""></img>
                 </div>
                 <div className="tituloSecao">
                     <b>Galeria artística</b>
@@ -22,19 +20,19 @@ function NavFiltro() {
                 <div className="caixa_botoesFiltro">
                     {/* Uma grid que irá fazer o display dos filtros de acesso à galeria, por ano (e pelos temas/atalhos no mobile): */}
                     <div className="caixa_botoesFiltroAno">
-                        <button type="button" className="botaoFiltroAno zoomHover" onClick="location.href='#\(-\) 2019'">(-) 2019</button>
-                        <button type="button" className="botaoFiltroAno zoomHover" onClick="location.href='#2020'">2020</button>
-                        <button type="button" className="botaoFiltroAno zoomHover" onClick="location.href='#2021'">2021</button>
-                        <button type="button" className="botaoFiltroAno zoomHover" onClick="location.href='#2022'">2022</button>
+                        <button type="button" className="botaoFiltroAno zoomHover">(-) 2019</button>
+                        <button type="button" className="botaoFiltroAno zoomHover">2020</button>
+                        <button type="button" className="botaoFiltroAno zoomHover">2021</button>
+                        <button type="button" className="botaoFiltroAno zoomHover">2022</button>
                     </div>
                     <div className="caixa_botoesFiltroTema">
-                        <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">
+                        <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton">
                             <img src={i8MLobby} alt=""></img>
                         </button>
-                        <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">
+                        <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton">
                             <img src={i8Battle} alt=""></img>
                         </button>
-                        <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton" onClick="location.href='gallery.html'">
+                        <button type="button" className="botaoTema botaoAno zoomHover customVisitedButton">
                             <img src={i8TChest} alt=""></img>
                         </button>
                     </div>
