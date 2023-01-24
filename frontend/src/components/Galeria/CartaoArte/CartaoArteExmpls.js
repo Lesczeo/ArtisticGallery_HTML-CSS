@@ -1,7 +1,6 @@
 import './CartaoArteExmpls.css';
 import Decal02 from '../../../img/Wireframe002.png';
 import DecalTEST from '../../Entrada/Info1/Banner002.png';
-// "../../../img/OOPS_No_Valid_Image_V001.png"
 
 function WireframeExmpl() {
     return(
@@ -21,18 +20,18 @@ function WireframeExmpl() {
     );
 }
 
-function PaintingExmpl() {
+function PaintingExmpl() {    
     return(
         <section className="cartaoArte">
             <div className="caixa_Imagem_cartaoArte">
-                <img src="https://thisartworkdoesnotexist.com/" className="preview_cartaoArte" alt="imagem de uma obra de arte"></img>
+                <img src={"https://thisartworkdoesnotexist.com/"} className="preview_cartaoArte" alt="imagem de uma obra de arte"></img>
             </div>
             <div className="descricao_cartaoArte">
                 <div className="tituloSecao">
                     <b>Super Drawing Example</b>
                 </div>
                 <p>"Esta imagem gerada não é de minha autoria. Estou usando-a somente para exemplificar um desenho. Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho Descrição do desenho"</p>
-                <a href="https://thisartworkdoesnotexist.com/" className="zoomHover preview_MResolucao" target="_blank" rel="noreferrer">Maior Resolução</a>
+                <a href={"https://thisartworkdoesnotexist.com/"} className="zoomHover preview_MResolucao" target="_blank" rel="noreferrer">Maior Resolução</a>
                 <p>Ferramentas usadas e Data Ferramentas usadas e Data</p>
             </div>
         </section>

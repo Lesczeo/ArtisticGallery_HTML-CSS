@@ -1,3 +1,10 @@
+#ultimaInfo{
+    background-color: darksalmon;
+    font-size: small;
+    padding: 2% 4%;
+    margin: 0 50px;
+}
+
 #mainGallery section {
     background-color: antiquewhite;
 }
@@ -21,11 +28,3 @@
 #mainGallery section:nth-child(even) .tituloSecao{
     border-color: darksalmon;
 }
-
-/* .botaoAtalhos a:visited{
-    color: black;
-}
-
-.botaoGaleria a:visited{
-    color: black;
-} */

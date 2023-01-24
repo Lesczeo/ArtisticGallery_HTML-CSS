@@ -22,14 +22,14 @@ html, body {
   /* flex-direction: row-reverse;*/
 }
 
-#Conteudo{
+#PainelConteudo{
   width: 100%;
   background-color: sienna;
   display: flex;
   flex-direction: column;
 }
 
-#Conteudo main section {
+#PainelConteudo main section {
   padding: 2% 4%;
   margin: 0 50px 18px 50px;
 }
@@ -54,12 +54,16 @@ html, body {
   cursor: pointer;
 }
 
+.customVisitedButton{
+  color: black;
+}
+
 .customVisitedButton:visited{
   color: black;
 }
 
 @media (max-width: 950px) {
-  #Conteudo main section {
+  #PainelConteudo main section {
     padding: 2% 3%;
     margin: 0 18px 18px 18px;
   }
@@ -72,7 +76,7 @@ html, body {
   .tituloSecao{
     font-size: larger;
   }
-  #Conteudo main section {
+  #PainelConteudo main section {
     padding: 2% 2%;
     margin: 0 12px 12px 12px;
   }
