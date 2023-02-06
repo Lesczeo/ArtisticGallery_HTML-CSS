@@ -1,8 +1,8 @@
 import './Gallery.css';
 import NavFiltro from "./Filtro/Filtro.js";
-import * as CA from "./CartaoArte/CartaoArteExmpls.js";
 import BotaoTopo from '../MOB_BotaoTopo/BotaoTopo.js';
 import InfoDev from "../InfoDev/InfoDev.js";
+import * as CA from './CartaoArte/CartaoArteExmpls'
 
 function Gallery() {
   return (
@@ -10,11 +10,12 @@ function Gallery() {
         <NavFiltro/>
         <div id="caixa_CartoesArte">
           <CA.WireframeExmpl/>
-          <CA.TESTINGExmpl/> {/* Testando imagens com dimensões discrepantes */}
+          <CA.TESTINGExmpl/>
           <CA.PaintingExmpl/>
           <CA.HorseExmpl/>
-          <CA.EasterEggExmpl/> {/* Easter Egg IHASPFTW */}
+          <CA.EasterEggExmpl/>
           <CA.CatExmpl/>
+          {/*<CA.ERRORExmpl/>*/}
         </div>
         <BotaoTopo/>
         <footer id="ultimaInfo"><InfoDev/></footer>

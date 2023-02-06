@@ -9,7 +9,6 @@ function BotaoTopo() {
         <div>Volte para o topo!</div>
         <img src={i8UP2} alt=""></img>
       </div>
-      {/* <a href="#rootHome"></a> */}
     </div>
   );
 }

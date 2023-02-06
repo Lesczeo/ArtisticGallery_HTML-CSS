@@ -1,5 +1,5 @@
 import './Info1.css';
-import Decal01 from './UserImage01.png'; //'./Wireframe001.png';
+import Decal01 from './UserImage01.png';
 import Decal02 from './Banner002.png';
 
 function InformacoesIntro() {
