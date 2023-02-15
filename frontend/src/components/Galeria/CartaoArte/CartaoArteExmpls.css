@@ -26,14 +26,18 @@
     font-size: larger;
 }
 
+.descricao_cartaoArte .tituloSecao:hover::before{ /* Emoji eyes (código CSS) antes do título, se o mouse passar por cima*/
+    content: "\1F440  ";
+}
+
 .descricao_cartaoArte p{
     margin: 2% 0px;
 }
 
 .preview_MResolucao{
+    margin-top: 2%;
     font-weight: bold;
     text-decoration: none;
-    color: chocolate;
 }
 
 @media (max-width: 950px) {

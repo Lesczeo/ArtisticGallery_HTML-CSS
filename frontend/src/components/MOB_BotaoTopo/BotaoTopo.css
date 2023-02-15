@@ -2,28 +2,21 @@
     display: none;
 }
 
-
 @media (max-width: 500px) {
-    .botaoTopoMobile{
+    .caixa_BotaoTopoMobile{
         position: sticky;
         bottom: 2%;
-        background-color: burlywood;
-        display: block;
-        border-radius: 10px;
         padding: 2%;
         margin: 0 12px 12px 12px;
+        background-color: burlywood;
+        font-weight: unset;
     }
-    .botaoTopoMobile a{
-        color: black;
-        text-decoration: none;
-    }
-    .caixa_botaoTopoMobile {
-        display: inline-flex;
+    .botaoTopoMobile {
+        display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
     }
-    .caixa_botaoTopoMobile img{
+    .botaoTopoMobile img{
         margin-left: 5px;
         width: 24px;
     }

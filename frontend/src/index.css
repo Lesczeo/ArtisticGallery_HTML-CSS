@@ -19,7 +19,6 @@ html, body {
   text-align: -webkit-center;
   display: inline-flex;
   background-image: url('./img/Wallpapers/TexturePers_SantaFeStucco002.png');
-  /* flex-direction: row-reverse;*/
 }
 
 #PainelConteudo{
@@ -54,12 +53,42 @@ html, body {
   cursor: pointer;
 }
 
-.customVisitedButton{
+.customVisitedButton{ /* Define a cor enquanto não ainda visitado */
   color: black;
 }
 
-.customVisitedButton:visited{
+.customVisitedButton:visited{ /* Mantêm a cor quando já visitado */
   color: black;
+}
+
+.botoes{
+  border-radius: 10px;
+  border-width: 0px;
+  font-weight: bold;
+}
+
+.botaoAno{
+  display: inline-grid;
+  place-content: center;
+  background-color: antiquewhite;
+  height: 50px;
+  min-width: 22%;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.botaoTema{
+  background-color: chocolate;
+  width: 32%;
+}
+
+.botaoTema img{
+  width: 45px;
+}
+
+.botoesAnos{
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 950px) {

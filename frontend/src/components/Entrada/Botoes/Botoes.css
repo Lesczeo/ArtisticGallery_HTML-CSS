@@ -1,33 +1,6 @@
-.botaoAno{
-    display: inline-grid;
-    place-content: center;
-    background-color: antiquewhite;
-    border-radius: 10px;
-    border-width: 0px;
-    height: 50px;
-    min-width: 22%;
-    font-size: larger;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.botaoTema{
-    background-color: chocolate;
-    width: 32%;
-}
-
-.botaoTema img{
-    width: 45px;
-}
-
-.botoesAnos{
-    display: flex;
-    justify-content: space-between;
-}
-
 .botoesTemas{
     display: none;
-}
+  }
 
 @media (max-width: 500px) {
 

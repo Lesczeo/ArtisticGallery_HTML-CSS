@@ -12,7 +12,7 @@
     margin-bottom: 2%;
 }
 
-.botaoFiltroIcon{
+.botaoEntrada{
     display: none;
 }
 
@@ -52,11 +52,8 @@
 
 .botaoFiltroAno{
     background-color: chocolate;
-    border-radius: 10px;
-    border-width: 0px;
     height: 50px;
     min-width: 23%;
-    font-weight: bold;
 }
 
 @media (max-width: 950px) {
@@ -103,15 +100,13 @@
         margin-top: 2%;
     }
 
-    .botaoFiltroIcon{
+    .botaoEntrada{
         display: block;
         width: 125%;
         background-color: chocolate;
-        border-radius: 10px;
-        border-width: 0px;
     }
     
-    .botaoFiltroIcon img{
+    .botaoEntrada img{
         width: 45px;
     }
     
