@@ -36,6 +36,20 @@
     text-indent: 10px;
     font-weight: bold;
 }
+#pesquisaFiltro:focus-visible{
+    transition: outline-offset 0.3s linear;
+    outline-width: 4px;
+    outline-style: dashed;
+    outline-color: peachpuff;
+    outline-offset: -3px;
+}
+#pesquisaFiltro::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: darksalmon;
+    opacity: 1; /* Firefox Exclusive*/
+}
+#pesquisaFiltro::-ms-input-placeholder { /* Microsoft Edge */
+    color: darksalmon;
+}
 
 .caixa_botoesFiltro{
     min-width: 55%;

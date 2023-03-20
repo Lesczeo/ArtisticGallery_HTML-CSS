@@ -109,6 +109,9 @@ html, body {
     padding: 2% 2%;
     margin: 0 12px 12px 12px;
   }
+  .botaoTema{
+      max-width: 23%;
+  }
   /* #rootHome{
     background-image: url('img/Wallpapers/TexturePers_SantaFeStucco002.png');
   } */

@@ -26,7 +26,8 @@
     font-size: larger;
 }
 
-.descricao_cartaoArte .tituloSecao:hover::before{ /* Emoji eyes (código CSS) antes do título, se o mouse passar por cima*/
+/* Emoji eyes (código CSS) antes do título, se o mouse passar por cima:*/
+.descricao_cartaoArte .tituloSecao:hover::before{ 
     content: "\1F440  ";
 }
 
