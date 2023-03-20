@@ -1,10 +1,15 @@
-#caixa_ListaDeAtalhos{
+#listaDeAtalhos{
     margin: 2%;
     display: flex;
     flex-direction: column;
 }
 
-#listaDeAtalhos{
+#stickyBox{
+    position: sticky;
+    top: 4%;
+}
+
+#listaBotoesAtalhos{
     margin: 2%;
     display: flex;
     flex-direction: column;
@@ -19,43 +24,41 @@
     color: black;
 }
 
-/* .botaoAtalhos img{
-  image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-} */
+.botaoTopo{
+    background-color: burlywood;
+    min-width: 100%;
+    padding: 10%;
+}
 
 #botaoAtalhosEntrada{
     background-color: darksalmon;
 }
 
-.botaoTopo{
-    position: sticky;
-    top: 2%;
-    background-color: burlywood;
-    padding: 10%;
-}
-
 @media (max-width: 950px) {
-    #caixa_ListaDeAtalhos{
+    #listaDeAtalhos{
         min-width: 12%;
     }
-    #listaDeAtalhos{
+    #stickyBox{
+        position: sticky;
+        top: 2%;
+    }
+    #listaBotoesAtalhos{
         margin: 2% 1%;
     }
-    #listaDeAtalhos .botaoAtalhos{
+    #listaBotoesAtalhos .botaoAtalhos{
         padding: 7%;
         margin-bottom: 20%;
     }
-    #caixa_ListaDeAtalhos .botaoTopo{
+    #listaDeAtalhos .botaoTopo{
         padding: 7%;
     }
-    #caixa_ListaDeAtalhos img{
+    #listaDeAtalhos img{
         max-width: 100%;
     }
 }
   
-@media (max-width: 500px) {
-    #caixa_ListaDeAtalhos {
+@media (max-width: 550px) {
+    #listaDeAtalhos {
         display: none;
     }
 }

@@ -24,7 +24,6 @@
 }
 
 @media (max-width: 950px) {
-
     .caixa_cartaoFerramenta{
         grid-template-columns: 48% 48%;
     }
@@ -36,7 +35,6 @@
 }
 
 @media (max-width: 500px) {
-
     .caixa_cartaoFerramenta{
         display: block;
     }

@@ -20,7 +20,7 @@ function ListaDeAtalhos() {
     largura. Para continuar os atalhos em uma dimensão de tela menor, eles devem aparecer na parte de filtros da galeria.
     SE BOTÕES FOREM ALTERADOS AQUI, NÃO SE ESQUEÇA DE FAZER O MESMO NO COMPONENTE DE FILTRO! (..\Galeria\Filtro\Filtro.js) */
 
-    <div id="caixa_ListaDeAtalhos">
+    <div id="listaDeAtalhos"><div id="stickyBox">
       {/* Botão que traz o usuário à entrada. Só aparece quando o PainelConteudo mostrar a galeria: */}
       {location.pathname !=="/" && <Link to='/'>
         <button id="botaoAtalhosEntrada" className="botoes botaoAtalhos zoomHover" title="Volte para a entrada!" type="button">
@@ -29,7 +29,7 @@ function ListaDeAtalhos() {
         </button>
       </Link>}
       {/*Uma coluna que irá fazer o display de algumas temáticas escolhidas para filtrar os desenhos: */}
-        <div id="listaDeAtalhos">
+        <div id="listaBotoesAtalhos">
           <Link to='/galeria'>
             <button title="Artes inspirados em animações!" className="botoes botaoAtalhos zoomHover customVisitedButton" type="button">
               <img src={i8MLobby} alt=""></img>
@@ -59,7 +59,7 @@ function ListaDeAtalhos() {
       <button title="Volte para o Topo!" className="botoes botaoTopo zoomHover" onClick={voltarTopo} type="button">
         <img src={i8UP2} alt=""></img>        
       </button>
-    </div>
+    </div></div>
   );
 }
 export default ListaDeAtalhos;

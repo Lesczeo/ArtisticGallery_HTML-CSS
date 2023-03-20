@@ -13,8 +13,20 @@ html, body {
   background-color: goldenrod;
 }
 
+/* scrollbar customizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-image: url('./img/Wallpapers/TexturePers_SantaFeStucco002.png');
+}
+::-webkit-scrollbar-thumb {
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
 #rootHome{
-  min-height: 100%; /*A tela é prejudicada por "height: 100%" se o conteúdo é a galeria de desenhos*/
+  /*min-height: 100%; A tela é prejudicada por "height: 100%" se o conteúdo é a galeria de desenhos*/
   width: 100%;
   text-align: -webkit-center;
   display: inline-flex;
@@ -101,7 +113,7 @@ html, body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .tituloSecao{
     font-size: larger;
   }
