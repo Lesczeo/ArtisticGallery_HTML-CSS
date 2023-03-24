@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 
+:root{
+  /* Variáveis de predefinição estarão aqui em breve! */
+}
+
 * {
   font-family: 'DynaPuff', cursive;
   -webkit-font-smoothing: antialiased;
@@ -113,7 +117,7 @@ html, body {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 580px) {
   .tituloSecao{
     font-size: larger;
   }

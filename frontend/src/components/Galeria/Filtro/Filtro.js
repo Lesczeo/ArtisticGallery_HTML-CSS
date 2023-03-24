@@ -25,15 +25,8 @@ function NavFiltro() {
                 </div>
             </div>
             <div className="caixa_Filtros">
-                <input type="text" id="pesquisaFiltro" placeholder="Selecione uma data"></input>
                 <div className="caixa_botoesFiltro">
                     {/* Uma grid que irá fazer o display dos filtros de acesso à galeria, por ano (e pelos temas/atalhos no mobile): */}
-                    <div className="caixa_botoesFiltroAno">
-                        <button className="botoes botaoFiltroAno zoomHover" type="button">(-) 2020</button>
-                        <button className="botoes botaoFiltroAno zoomHover" type="button">2021</button>
-                        <button className="botoes botaoFiltroAno zoomHover" type="button">2022</button>
-                        <button className="botoes botaoFiltroAno zoomHover" type="button">2023</button>
-                    </div>
                     <div className="caixa_botoesFiltroTema">
                         <button className="botoes botaoTema botaoAno zoomHover customVisitedButton" type="button">
                             <img src={i8MLobby} alt=""></img>
@@ -48,7 +41,14 @@ function NavFiltro() {
                             <img src={i8TChest} alt=""></img>
                         </button>
                     </div>
+                    <div className="caixa_botoesFiltroAno">
+                        <button className="botoes botaoFiltroAno zoomHover" type="button">(-) 2020</button>
+                        <button className="botoes botaoFiltroAno zoomHover" type="button">2021</button>
+                        <button className="botoes botaoFiltroAno zoomHover" type="button">2022</button>
+                        <button className="botoes botaoFiltroAno zoomHover" type="button">2023</button>
+                    </div>
                 </div>
+                <input type="text" id="pesquisaFiltro" placeholder="Selecione uma data"></input>
             </div>
         </nav>
     );

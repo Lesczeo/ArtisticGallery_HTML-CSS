@@ -8,14 +8,7 @@ function Gallery() {
   return (
     <main id="mainGallery">
         <NavFiltro/>
-        <div id="caixa_CartoesArte">
-          {/* <CA.ERRORExmpl/> */}
-          <CA.CartaoArteDummy/>
-          <CA.CartaoArteDummy/>
-          <CA.CartaoArteDummy/>
-          <CA.CartaoArteDummy/>
-          <CA.BannerExmpl/>
-        </div>
+        <CA.TodosOsCartoes/>
         <BotaoTopo/>
         <footer id="ultimaInfo"><InfoDev/></footer>
     </main>

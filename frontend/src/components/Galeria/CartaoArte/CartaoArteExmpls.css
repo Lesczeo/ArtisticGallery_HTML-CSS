@@ -5,8 +5,17 @@
 }
 
 .caixa_Imagem_cartaoArte{
+    /* aspect-ratio: 4 / 1; */
     width: 52%;
     align-self: center;
+}
+
+/* Emoji eyes (código CSS) antes do título, se o mouse passar por cima:*/
+.caixa_preview_cartaoArte:hover::before{
+    position: absolute;
+    font-size: x-large;
+    margin: 2px 0 0 3px;
+    content: "\1F440 ";
 }
 
 .preview_cartaoArte{
@@ -50,9 +59,18 @@
         width: 100%;
         border-width: 2px;
     }
+    .descricao_cartaoArte .tituloSecao::before{ 
+        content: "\1F440  ";
+    }
+    .caixa_preview_cartaoArte::before{
+        position: absolute;
+        font-size: unset;
+        margin: 2px 0 0 3px;
+        content: "\1F440 ";
+    }
 }
   
-@media (max-width: 550px) {
+@media (max-width: 675px) {
     .cartaoArte{
         flex-direction: column;  
     }
