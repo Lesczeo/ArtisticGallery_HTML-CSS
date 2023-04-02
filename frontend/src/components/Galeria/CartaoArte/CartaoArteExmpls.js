@@ -19,8 +19,11 @@ function TodosOsCartoes() {
         }
     );
     
-    /* Adding a dummy card to all cards div. Remover depois!!
-    finalCArte.unshift(CartaoArteDummy); */ 
+    
+    // Adicione cards de teste aqui, usando "unshift()" no finalCArte
+    // OBS.: Remova assim que terminar de testar!
+    /* finalCArte.unshift(BannerExmpl()); */
+    
 
     return (
         <div>
@@ -54,18 +57,16 @@ function ModeloCartaoArte(srcImg,srcName,srcBDay,srcDesc,srcTools,srcThemes,srcI
 
     return (
         <section className="cartaoArte" key={srcID}>
-            <div className="imagem_cartaoArte zoomImgHover">
-                <a className="caixa_preview_cartaoArte"
-                    href={srcImg}
-                    title="Clique para ver em maior resolução"
-                    alt={srcName}
-                    target="_blank"
-                    rel="noreferrer">
-                    <img src={srcImg} className="preview_cartaoArte"
-                    onError={(erro)=>{ErroAoObterDesenho(erro)}} alt=""></img>
-                </a>
-            </div>
-            <div className="descricao_cartaoArte">
+            <a className="previewCartaoArte zoomImgHover" /*caixa_preview_cartaoArte*/
+            href={srcImg}
+            title="Clique para ver em maior resolução"
+            alt={srcName}
+            target="_blank"
+            rel="noreferrer">
+                <img src={srcImg} className="imagemCartaoArte"
+                onError={(erro)=>{ErroAoObterDesenho(erro)}} alt=""></img>
+            </a>
+            <div className="descricaoCartaoArte">
                 <div className="tituloSecao">
                     {srcName}
                 </div>
@@ -111,7 +112,7 @@ function ErroAoObterDesenho(evento) {
 function BannerExmpl() {
     const imag = DCBanner;
     const nome = "Artem est de anima (Banner de Entrada)";
-    const diaC = "Da/ta/Data";
+    const diaC = "Da-ta-Data";
     const desc = `Esta imagem é de minha autoria. Estou usando-a para exemplificar
     um desenho. Descrição do desenho Descrição do desenho Descrição do desenho
     Descrição do desenho Descrição do desenho`;
@@ -148,7 +149,7 @@ function CartaoArteDummy() {
     const imag = imgsURLcArte[Math.floor(Math.random() * imgsURLcArte.length)];
     // Info estática:
     const nome = "Super Drawing Example";
-    const diaC = "Da/ta/Data";
+    const diaC = "Da-ta-Data";
     const desc = `Esta imagem pode não ser de minha autoria, e estou usando-a somente para
     exemplificar um desenho. Ela foi escolhida aleatoriamente por arquivos internos da aplicação
     só para você! Não é belo?`;

@@ -16,7 +16,7 @@
     background-color: var(--CrCArtePri1);
 }
 
-#mainGallery section .preview_cartaoArte{
+#mainGallery section .imagemCartaoArte{
     border-color: var(--CrCArtePri2);
 }
 
@@ -25,10 +25,10 @@
 }
 
 #mainGallery section:nth-child(even) {
-    background-color: var(--CrCArteSec1); 
+    background-color: var(--CrCArteSec1);
 }
 
-#mainGallery section:nth-child(even) .preview_cartaoArte{
+#mainGallery section:nth-child(even) .imagemCartaoArte{
     border-color: var(--CrCArteSec2);
 }
 

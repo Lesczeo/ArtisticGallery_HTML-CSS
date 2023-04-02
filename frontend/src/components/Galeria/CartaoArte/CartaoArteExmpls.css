@@ -1,16 +1,47 @@
 .cartaoArte{
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: 48% 50%;
+    grid-template-rows: 100%;
     border-radius: 10px;
+    max-height: 400px;
+    overflow: auto;
+}
+/* scrollbar customizada */
+.cartaoArte::-webkit-scrollbar {
+    width: 10px;
+}
+.cartaoArte::-webkit-scrollbar-track {
+    background: transparent;
+}
+.cartaoArte::-webkit-scrollbar-thumb {
+    background-color: var(--CrBtns1);
+    border-radius: 4px;
 }
 
-.imagem_cartaoArte{
-    width: 52%;
-    align-self: center;
+.previewCartaoArte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-self: center;
+    aspect-ratio: 1/1;
+    max-height: 100%;
+    max-width: 100%;
 }
-
-.caixa_preview_cartaoArte:hover{
+.previewCartaoArte:hover{
     cursor: zoom-in;
+}
+
+.imagemCartaoArte{
+    /* 1% a menos de 100% por causa da borda em pixels, que aumenta a area da imagem */
+    max-width: 99%;
+    max-height: 99%;
+    border: solid 4px;
+}
+
+.imagemDesc{
+    text-decoration: none;
 }
 
 .zoomImgHover:hover{
@@ -18,59 +49,50 @@
   transition: 0.5s cubic-bezier(0, 0, 0, 1.2);
 }
 
-.preview_cartaoArte{
-    width: 85%;
-    border: solid 4px;
-}
-
-.descricao_cartaoArte{
-    width: 47%;
+.descricaoCartaoArte{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.descricao_cartaoArte .tituloSecao{
+.descricaoCartaoArte .tituloSecao{
     font-size: larger;
     font-weight: bold;
 }
 
-.descricao_cartaoArte p{
+.descricaoCartaoArte p{
     margin: 2% 0px;
 }
 
 @media (max-width: 950px) {
-    .caixa_Imagem_cartaoArte{
-        width: 50%;
-    }
-    .preview_cartaoArte{
-        width: 100%;
-        border-width: 2px;
-    }
-    /* Emoji de lupa antes do título, indicando zoom ao clicar (sem cursor):*/
-    .caixa_preview_cartaoArte::before{
+    /* Emoji de lupa antes do título, indicando zoom ao clicar (sem cursor): */
+    .previewCartaoArte::before{
+        content: "\01F50D ";
         position: absolute;
         font-size: unset;
         margin: 5px 0 0 5px;
-        content: "\01F50D ";
+        opacity: 0.5;
+    }
+    .imagemCartaoArte{
+        border-width: 2px;
     }
 }
   
-@media (max-width: 675px) {
+@media (max-width: 675px) {/*  */
     .cartaoArte{
-        flex-direction: column;  
+        display: flex;
+        flex-direction: column;
+        max-height: 800px;
     }
-    .imagem_cartaoArte{
+    .previewCartaoArte{
+        aspect-ratio: 10/8;
         margin-bottom: 2%;
         width: 100%;
     }
-    .descricao_cartaoArte{
-        width: 47%;
+    .descricaoCartaoArte{
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    }
-    .descricao_cartaoArte{
-        width: 100%;
     }
 }
