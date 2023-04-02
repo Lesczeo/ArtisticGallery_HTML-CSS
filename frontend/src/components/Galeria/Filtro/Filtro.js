@@ -48,7 +48,7 @@ function NavFiltro() {
                         <button className="botoes botaoFiltroAno zoomHover" type="button">2023</button>
                     </div>
                 </div>
-                <input type="text" id="pesquisaFiltro" placeholder="Selecione uma data"></input>
+                <input type="search" id="pesquisaFiltro" placeholder="Selecione uma data"></input>
             </div>
         </nav>
     );

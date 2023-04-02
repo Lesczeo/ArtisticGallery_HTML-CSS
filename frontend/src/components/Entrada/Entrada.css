@@ -6,19 +6,19 @@
 }
 
 #mainEntrada section {
-  background-color: antiquewhite;
+  background-color: var(--CrDivPri1);
 }
 
 #mainEntrada section .tituloSecao {
-  border-color: darksalmon;
+  border-color: var(--CrDivPri2);
 }
 
 #mainEntrada section:nth-of-type(even) {  
-  background-color: darksalmon;
+  background-color: var(--CrDivSec1);
 }
   
 #mainEntrada section:nth-of-type(even) .tituloSecao{
-  border-color: sienna;
+  border-color: var(--CrDivSec2);
 }
 
 #mainEntrada section:nth-last-child(1) {

@@ -2,6 +2,20 @@
 
 :root{
   /* Variáveis de predefinição estarão aqui em breve! */
+  --CrPri: goldenrod;
+  --CrSec: sienna;
+  --CrBtns1: chocolate;
+  --CrBtns2: darksalmon;
+  --CrBtns3: burlywood;
+
+  --CrDivPri1: antiquewhite;
+  --CrDivPri2: burlywood;
+  --CrDivSec1: darksalmon;
+  --CrDivSec2: peachpuff;
+
+  --CrEspecial1: antiquewhite;
+  --CrEspecial2: peachpuff;
+  --CrFonte: black;
 }
 
 * {
@@ -14,19 +28,20 @@
 html, body {
   margin: 0px;
   height: 100%;
-  background-color: goldenrod;
+  background-color: var(--CrPri);
 }
 
 /* scrollbar customizada */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background-image: url('./img/Wallpapers/TexturePers_SantaFeStucco002.png');
+  /* background: transparent; */
+  background-image: url('./img/Wallpapers/Gradient_SmallerDashedBurlywood.png');
 }
 ::-webkit-scrollbar-thumb {
-  background-color: antiquewhite;
-  border-radius: 5px;
+  background-color: var(--CrBtns1);
+  border-radius: 4px;
 }
 
 #rootHome{
@@ -34,12 +49,12 @@ html, body {
   width: 100%;
   text-align: -webkit-center;
   display: inline-flex;
-  background-image: url('./img/Wallpapers/TexturePers_SantaFeStucco002.png');
+  background-image: url('./img/Wallpapers/Gradient_SmallerDashedBurlywood.png');
 }
 
 #PainelConteudo{
   width: 100%;
-  background-color: sienna;
+  background-color: var(--CrSec);
   display: flex;
   flex-direction: column;
 }
@@ -70,11 +85,11 @@ html, body {
 }
 
 .customVisitedButton{ /* Define a cor enquanto não ainda visitado */
-  color: black;
+  color: var(--CrFonte);
 }
 
 .customVisitedButton:visited{ /* Mantêm a cor quando já visitado */
-  color: black;
+  color: var(--CrFonte);
 }
 
 .botoes{
@@ -86,7 +101,7 @@ html, body {
 .botaoAno{
   display: inline-grid;
   place-content: center;
-  background-color: antiquewhite;
+  background-color: var(--CrEspecial1);
   height: 50px;
   min-width: 22%;
   font-size: larger;
@@ -94,7 +109,7 @@ html, body {
 }
 
 .botaoTema{
-  background-color: chocolate;
+  background-color: var(--CrBtns1);
   width: 32%;
 }
 

@@ -17,21 +17,21 @@
 }
 
 .botaoAtalhos{
-    background-color: chocolate;
+    background-color: var(--CrBtns1);
     padding: 10%;
     margin-bottom: 25%;
     font-size: small;
-    color: black;
+    color: var(--CrFonte);
 }
 
 .botaoTopo{
-    background-color: burlywood;
+    background-color: var(--CrBtns2);
     min-width: 100%;
     padding: 10%;
 }
 
 #botaoAtalhosEntrada{
-    background-color: darksalmon;
+    background-color: var(--CrBtns2);
 }
 
 @media (max-width: 950px) {

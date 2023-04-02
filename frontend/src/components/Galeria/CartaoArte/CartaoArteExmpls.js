@@ -54,21 +54,20 @@ function ModeloCartaoArte(srcImg,srcName,srcBDay,srcDesc,srcTools,srcThemes,srcI
 
     return (
         <section className="cartaoArte" key={srcID}>
-            <div className="caixa_Imagem_cartaoArte">
-                <a href={srcImg} title="Clique para ver em maior resolução"
-                alt={srcName} className="caixa_preview_cartaoArte"
-                target="_blank" rel="noreferrer">
+            <div className="imagem_cartaoArte zoomImgHover">
+                <a className="caixa_preview_cartaoArte"
+                    href={srcImg}
+                    title="Clique para ver em maior resolução"
+                    alt={srcName}
+                    target="_blank"
+                    rel="noreferrer">
                     <img src={srcImg} className="preview_cartaoArte"
                     onError={(erro)=>{ErroAoObterDesenho(erro)}} alt=""></img>
                 </a>
             </div>
             <div className="descricao_cartaoArte">
-                <div className="zoomHover tituloSecao">
-                    <a href={srcImg} className="preview_MResolucao customVisitedButton"
-                    alt={srcName} title="Clique para ver em maior resolução"
-                    target="_blank" rel="noreferrer">
-                        {srcName}
-                    </a>
+                <div className="tituloSecao">
+                    {srcName}
                 </div>
                 <p>&#127874; <b>Criado em: </b>{srcBDay}</p>
                 <p>{srcDesc}</p>

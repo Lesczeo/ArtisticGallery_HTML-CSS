@@ -22,7 +22,7 @@ function ListaDeAtalhos() {
 
     <div id="listaDeAtalhos"><div id="stickyBox">
       {/* Botão que traz o usuário à entrada. Só aparece quando o PainelConteudo mostrar a galeria: */}
-      {location.pathname !=="/" && <Link to='/'>
+      {location.pathname === "/galeria" && <Link to='/'>
         <button id="botaoAtalhosEntrada" className="botoes botaoAtalhos zoomHover" title="Volte para a entrada!" type="button">
           <img src={i8ODoor} alt=""></img>
           <span>Entrada</span>

@@ -1,7 +1,7 @@
 #filtro{
     display: flex;
     flex-direction: column;
-    background-color: darksalmon;
+    background-color: var(--CrDivSec1);
     padding: 2% 4%;
     margin: 0 50px 18px 50px;
 }
@@ -19,7 +19,7 @@
 #filtro .tituloSecao{
     width: 40%;
     margin-bottom: 0px;
-    border-color: sienna;
+    border-color: var(--CrDivSec2);
 }
 
 .caixa_Filtros{
@@ -28,7 +28,7 @@
 }
 
 #pesquisaFiltro{
-    background-color: antiquewhite;
+    background-color: var(--CrEspecial1);
     min-width: 42%;
     border-radius: 10px;
     border-width: 0px;
@@ -40,15 +40,15 @@
     transition: outline-offset 0.3s linear;
     outline-width: 4px;
     outline-style: dashed;
-    outline-color: peachpuff;
+    outline-color: var(--CrEspecial2);
     outline-offset: -3px;
 }
 #pesquisaFiltro::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: darksalmon;
+    color: var(--CrDivSec1);
     opacity: 1; /* Firefox Exclusive*/
 }
 #pesquisaFiltro::-ms-input-placeholder { /* Microsoft Edge */
-    color: darksalmon;
+    color: var(--CrDivSec1);
 }
 
 .caixa_botoesFiltro{
@@ -65,7 +65,7 @@
 }
 
 .botaoFiltroAno{
-    background-color: antiquewhite;
+    background-color: var(--CrEspecial1);
     height: 50px;
     min-width: 23%;
 }
@@ -116,7 +116,7 @@
     .botaoEntrada{
         display: block;
         width: 125%;
-        background-color: chocolate;
+        background-color: var(--CrBtns1);
     }
     
     .botaoEntrada img{
