@@ -36,7 +36,6 @@ html, body {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  /* background: transparent; */
   background-image: url('./img/Wallpapers/Gradient_SmallerDashedBurlywood.png');
 }
 ::-webkit-scrollbar-thumb {
@@ -45,7 +44,6 @@ html, body {
 }
 
 #rootHome{
-  /*min-height: 100%; A tela é prejudicada por "height: 100%" se o conteúdo é a galeria de desenhos*/
   width: 100%;
   text-align: -webkit-center;
   display: inline-flex;
@@ -60,6 +58,7 @@ html, body {
 }
 
 #PainelConteudo main section {
+  /* As seções no painel conteúdo recebem um espaçamento para melhor visibilidade a seguir: */
   padding: 2% 4%;
   margin: 0 50px 18px 50px;
 }
@@ -84,11 +83,13 @@ html, body {
   cursor: pointer;
 }
 
-.customVisitedButton{ /* Define a cor enquanto não ainda visitado */
+.customVisitedButton{
+  /* Define a cor enquanto não ainda visitado */
   color: var(--CrFonte);
 }
 
-.customVisitedButton:visited{ /* Mantêm a cor quando já visitado */
+.customVisitedButton:visited{
+  /* Mantêm a cor quando já visitado */
   color: var(--CrFonte);
 }
 

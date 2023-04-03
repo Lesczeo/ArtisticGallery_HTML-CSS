@@ -18,6 +18,9 @@
 .caixa_Imagem_cartaoFerramenta img{
     height: 100%;
 }
+.caixa_Imagem_cartaoFerramenta img:hover{
+    background-image: radial-gradient(circle, var(--CrBtns3)/* red */ 25%, transparent 70%);
+}
 
 .cartaoFerramenta p{
     font-size: smaller;
