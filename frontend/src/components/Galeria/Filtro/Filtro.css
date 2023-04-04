@@ -22,9 +22,39 @@
     border-color: var(--CrDivSec2);
 }
 
+.filtros{
+    display: flex;
+    justify-content: space-between;
+    min-height: 35px;
+}
+
+.child_filtros{
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    gap: 4%;
+}
+
+/*
 .caixa_Filtros{
     display: flex;
     justify-content: space-between;
+}
+
+.caixa_botoesFiltro{ 
+    min-width: 55%;
+}
+.caixa_botoesFiltroAno{
+    display: flex;
+    justify-content: space-between;
+}
+.caixa_botoesFiltroTema{
+    display: none;
+}
+.botaoFiltroAno{
+    background-color: var(--CrEspecial1);
+    height: 50px;
+    min-width: 23%;
 }
 
 #pesquisaFiltro{
@@ -43,57 +73,34 @@
     outline-color: var(--CrEspecial2);
     outline-offset: -3px;
 }
-#pesquisaFiltro::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+#pesquisaFiltro::placeholder { //Chrome, Firefox, Opera, Safari 10.1+
     color: var(--CrDivSec1);
-    opacity: 1; /* Firefox Exclusive*/
+    opacity: 1; //Firefox Exclusive
 }
-#pesquisaFiltro::-ms-input-placeholder { /* Microsoft Edge */
+#pesquisaFiltro::-ms-input-placeholder { //Microsoft Edge
     color: var(--CrDivSec1);
 }
-
-.caixa_botoesFiltro{
-    min-width: 55%;
-}
-
-.caixa_botoesFiltroAno{
-    display: flex;
-    justify-content: space-between;
-}
-
-.caixa_botoesFiltroTema{
-    display: none;
-}
-
-.botaoFiltroAno{
-    background-color: var(--CrEspecial1);
-    height: 50px;
-    min-width: 23%;
-}
+*/
 
 @media (max-width: 950px) {
-    
     #filtro{
         padding: 2% 3%;
         margin: 0 18px 18px 18px;
     }
-
     #filtro .tituloSecao{
         width: 65%;
     }
-
 }
 
 @media (max-width: 725px) {
-
-    .caixa_Filtros{
+    /* .filtros{
         flex-direction: column;
-    }
+    } */
 
     #pesquisaFiltro{
         min-width: 95%;
         margin-top: 2%;
     }
-
     .caixa_botoesFiltroAno{
         min-width: 100%;
     }
@@ -101,7 +108,6 @@
 }
 
 @media (max-width: 580px) {
-
     #filtro{
         padding: 2% 2%;
         margin: 0 12px 12px 12px;
@@ -118,7 +124,6 @@
         width: 125%;
         background-color: var(--CrBtns1);
     }
-    
     .botaoEntrada img{
         width: 45px;
     }

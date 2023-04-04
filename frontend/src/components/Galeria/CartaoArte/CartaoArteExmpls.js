@@ -1,6 +1,8 @@
 import './CartaoArteExmpls.css';
 import DecalFail from './OOPS_No_Valid_Image_V001.png';
-import DCBanner from '../../Entrada/Info1/Banner002.png';
+import DCbanner from '../../Entrada/Info1/Banner002.png';
+import DCtest from '../../../img/Banner001.png';
+
 import { imgsURLcArte, arrayCArte } from '../ImgURLdata.js';
 
 function TodosOsCartoes() {
@@ -22,7 +24,7 @@ function TodosOsCartoes() {
     
     // Adicione cards de teste aqui, usando "unshift()" no finalCArte
     // OBS.: Remova assim que terminar de testar!
-    /* finalCArte.unshift(BannerExmpl()); */
+    /*  */finalCArte.unshift(BannerExmpl());
     
 
     return (
@@ -55,23 +57,31 @@ function ModeloCartaoArte(srcImg,srcName,srcBDay,srcDesc,srcTools,srcThemes,srcI
     srcThemes = (srcThemes? srcThemes : vazio);
     srcThemes = (Array.isArray(srcThemes)? FormataFrase(srcThemes) : srcThemes);
 
+    // Isso garante que o nome e a descrição começará com letra MAIÚSCULA:
+    srcName = srcName.charAt(0).toUpperCase() + srcName.slice(1);
+    srcDesc = srcDesc.charAt(0).toUpperCase() + srcDesc.slice(1);
+
     return (
         <section className="cartaoArte" key={srcID}>
-            <a className="previewCartaoArte zoomImgHover" /*caixa_preview_cartaoArte*/
-            href={srcImg}
-            title="Clique para ver em maior resolução"
-            alt={srcName}
-            target="_blank"
-            rel="noreferrer">
-                <img src={srcImg} className="imagemCartaoArte"
-                onError={(erro)=>{ErroAoObterDesenho(erro)}} alt=""></img>
-            </a>
-            <div className="descricaoCartaoArte">
+            <div className="previewCA zoomImgHover">
+                {/* <div className='descdescdesc'> */}
+                    <a className="linkImgCA"
+                    href={srcImg}
+                    title="Clique para ver a imagem inteira"
+                    alt={srcName}
+                    target="_blank"
+                    rel="noreferrer">
+                        <img src={srcImg} className="imagemCA" alt=""
+                        onError={(erro)=>{ErroAoObterDesenho(erro)}}></img>
+                    </a>
+                {/* </div> */}
+            </div>
+            <div className="descricaoCA">
                 <div className="tituloSecao">
                     {srcName}
                 </div>
                 <p>&#127874; <b>Criado em: </b>{srcBDay}</p>
-                <p>{srcDesc}</p>
+                <p className='mainDescricaoCA'>"{srcDesc}"</p>
                 <p>&#128296; <b>Ferramentas usadas: </b>{srcTools}</p>
                 <p>&#11088; <b>Temas: </b>{srcThemes}</p>
             </div>
@@ -110,7 +120,7 @@ function ErroAoObterDesenho(evento) {
 
 // 3 Funções de codificação teste (não usar ativamente):
 function BannerExmpl() {
-    const imag = DCBanner;
+    const imag = DCbanner;
     const nome = "Artem est de anima (Banner de Entrada)";
     const diaC = "Da-ta-Data";
     const desc = `Esta imagem é de minha autoria. Estou usando-a para exemplificar

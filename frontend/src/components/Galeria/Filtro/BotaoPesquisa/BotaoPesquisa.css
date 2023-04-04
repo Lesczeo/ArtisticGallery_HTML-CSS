@@ -1,0 +1,12 @@
+.btnPesquisa{
+    border-radius: 3px;
+    border-width: 0px;
+    background-color: var(--CrBtns1);
+    min-width: 75%;
+}
+
+@media (max-width: 580px) {
+.btnPesquisa {
+    min-width: 100%;
+}
+}

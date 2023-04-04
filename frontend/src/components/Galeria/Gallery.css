@@ -16,8 +16,8 @@
     background-color: var(--CrCArtePri1);
 }
 
-#mainGallery section .imagemCartaoArte{
-    border-color: var(--CrCArtePri2);
+#mainGallery section .previewCA{
+    background-color: var(--CrCArtePri2);
 }
 
 #mainGallery section .tituloSecao{
@@ -28,8 +28,8 @@
     background-color: var(--CrCArteSec1);
 }
 
-#mainGallery section:nth-child(even) .imagemCartaoArte{
-    border-color: var(--CrCArteSec2);
+#mainGallery section:nth-child(even) .previewCA{
+    background-color: var(--CrCArteSec2);
 }
 
 #mainGallery section:nth-child(even) .tituloSecao{

@@ -1,12 +1,10 @@
 import './Filtro.css';
 // React-Router-Dom links:
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
+import SlcQuanCA from './SelectQuantiaCA/SelectQCA.js';
+import BtnPesquisaDet from './BotaoPesquisa/BotaoPesquisa.js';
 // Icones:
 import i8ODoor from '../../../img/img_Icons8/open-door-50.png';
-import i8MLobby from '../../../img/img_Icons8/mr-blobby-50.png';
-import i8Battle from '../../../img/img_Icons8/battle-50.png';
-import i8Sketch from '../../../img/img_Icons8/sketch-50.png';
-import i8TChest from '../../../img/img_Icons8/treasure-chest-50.png';
 
 function NavFiltro() {
     const location = useLocation()
@@ -24,9 +22,9 @@ function NavFiltro() {
                     <b>Galeria artística</b>
                 </div>
             </div>
-            <div className="caixa_Filtros">
-                <div className="caixa_botoesFiltro">
-                    {/* Uma grid que irá fazer o display dos filtros de acesso à galeria, por ano (e pelos temas/atalhos no mobile): */}
+            <div className="filtros">
+                {/* <div className="caixa_botoesFiltro">
+                    Uma grid que irá fazer o display dos filtros de acesso à galeria, por ano (e pelos temas/atalhos no mobile):
                     <div className="caixa_botoesFiltroTema">
                         <button className="botoes botaoTema botaoAno zoomHover customVisitedButton" type="button">
                             <img src={i8MLobby} alt=""></img>
@@ -47,8 +45,9 @@ function NavFiltro() {
                         <button className="botoes botaoFiltroAno zoomHover" type="button">2022</button>
                         <button className="botoes botaoFiltroAno zoomHover" type="button">2023</button>
                     </div>
-                </div>
-                <input type="search" id="pesquisaFiltro" placeholder="Selecione uma data"></input>
+                </div> */}
+                <BtnPesquisaDet/>
+                <SlcQuanCA/>
             </div>
         </nav>
     );
