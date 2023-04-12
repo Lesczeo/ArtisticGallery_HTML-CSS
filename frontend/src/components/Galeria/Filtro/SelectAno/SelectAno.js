@@ -1,10 +1,11 @@
 import './SelectAno.css';
+import { DataAtual } from '../../../../miscFunc';
 // React-Router-Dom links:
 // import { useHistory } from 'react-router-dom';
 
 export default function SlcAno() {
     // Pega o dia atual e extrai o ano para usar como métrica em <option>:
-	const date = new Date().getFullYear();
+	const date = DataAtual("Ano");
 
     // Servirá de apoio para filtrar por ano:
     /*let history = useHistory();

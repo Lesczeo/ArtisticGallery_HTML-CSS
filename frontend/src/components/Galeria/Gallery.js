@@ -1,14 +1,14 @@
 import './Gallery.css';
 import NavFiltro from "./Filtro/Filtro.js";
-import BotaoTopo from '../MOB_BotaoTopo/BotaoTopo.js';
-import InfoDev from "../InfoDev/InfoDev.js";
-import * as CA from './CartaoArte/CartaoArteExmpls'
+import BotaoTopo from '../CMisc/MOB_BotaoTopo/BotaoTopo.js';
+import InfoDev from "../CMisc/InfoDev/InfoDev.js";
+import TodosOsCartoes from './CartaoArte/CartaoArte.js'
 
 function Gallery() {
   return (
     <main id="mainGallery">
         <NavFiltro/>
-        <CA.TodosOsCartoes/>
+        <TodosOsCartoes/>
         <BotaoTopo/>
         <footer id="ultimaInfo"><InfoDev/></footer>
     </main>

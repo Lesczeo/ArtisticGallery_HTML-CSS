@@ -16,7 +16,7 @@
     display: none;
 }
 
-#filtro .tituloSecao{
+#filtro .sectionTitulos{
     width: 40%;
     margin-bottom: 0px;
     border-color: var(--CrDivSec2);
@@ -87,7 +87,7 @@
         padding: 2% 3%;
         margin: 0 18px 18px 18px;
     }
-    #filtro .tituloSecao{
+    #filtro .sectionTitulos{
         width: 65%;
     }
 }

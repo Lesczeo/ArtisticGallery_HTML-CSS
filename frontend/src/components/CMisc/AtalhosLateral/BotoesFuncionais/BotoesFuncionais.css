@@ -1,0 +1,15 @@
+.botaoTopo{
+    background-color: var(--CrBtns2);
+    min-width: 100%;
+    padding: 10%;
+}
+
+#botaoAtalhosEntrada{
+    background-color: var(--CrBtns2);
+}
+
+@media (max-width: 950px) {
+    .botaoTopo{
+        padding: 7%;
+    }
+}

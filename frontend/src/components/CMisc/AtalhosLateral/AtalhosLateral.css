@@ -24,16 +24,6 @@
     color: var(--CrFonte);
 }
 
-.botaoTopo{
-    background-color: var(--CrBtns2);
-    min-width: 100%;
-    padding: 10%;
-}
-
-#botaoAtalhosEntrada{
-    background-color: var(--CrBtns2);
-}
-
 @media (max-width: 950px) {
     #listaDeAtalhos{
         min-width: 12%;
@@ -48,9 +38,6 @@
     #listaBotoesAtalhos .botaoAtalhos{
         padding: 7%;
         margin-bottom: 20%;
-    }
-    #listaDeAtalhos .botaoTopo{
-        padding: 7%;
     }
     #listaDeAtalhos img{
         max-width: 100%;

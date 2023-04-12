@@ -18,7 +18,7 @@ function NavFiltro() {
                         <img src={i8ODoor} alt=""></img>
                     </button>
                 </Link>}
-                <div className="tituloSecao">
+                <div className="sectionTitulos">
                     <b>Galeria artística</b>
                 </div>
             </div>

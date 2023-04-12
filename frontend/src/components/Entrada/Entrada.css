@@ -1,4 +1,4 @@
-.descricao_Secao{
+.box_SectionTitulos{
   display: flex;
   flex-direction: column;
   width: 74%;
@@ -9,7 +9,7 @@
   background-color: var(--CrDivPri1);
 }
 
-#mainEntrada section .tituloSecao {
+#mainEntrada section .sectionTitulos {
   border-color: var(--CrDivPri2);
 }
 
@@ -17,7 +17,7 @@
   background-color: var(--CrDivSec1);
 }
   
-#mainEntrada section:nth-of-type(even) .tituloSecao{
+#mainEntrada section:nth-of-type(even) .sectionTitulos{
   border-color: var(--CrDivSec2);
 }
 

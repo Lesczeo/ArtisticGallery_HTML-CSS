@@ -1,0 +1,53 @@
+.previewCA{
+    align-self: center;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+}
+.previewCA:hover{
+    cursor: zoom-in;
+}
+
+.linkImgCA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+.imagemCA{
+    object-fit: cover;
+    flex: auto;
+    aspect-ratio: 1/1;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+    /* Para imagens menores:
+    image-rendering: pixelated; */
+}
+
+.zoomImgHover:hover{
+  transform: scale(1.025);
+  transition: 0.5s cubic-bezier(0, 0, 0, 1.2);
+}
+
+@media (max-width: 950px) {
+    .previewCA{
+        text-align: start;
+    }
+    /* Emoji de lupa antes do título, indicando zoom ao clicar (sem cursor): */
+    .previewCA::before{
+        content: "\01F50D ";
+        position: absolute;
+        margin: 12px 0 0 12px;
+    }
+}
+  
+@media (max-width: 675px) {/*  */
+    .previewCA{
+        margin-bottom: 2%;
+    }
+    .previewCA::before{
+        margin: 16px 0 0 16px;
+        font-size: larger;
+    }
+}

@@ -20,7 +20,7 @@
     background-color: var(--CrCArtePri2);
 }
 
-#mainGallery section .tituloSecao{
+#mainGallery section .sectionTitulos{
     border-color: var(--CrCArtePri2);
 }
 
@@ -32,7 +32,7 @@
     background-color: var(--CrCArteSec2);
 }
 
-#mainGallery section:nth-child(even) .tituloSecao{
+#mainGallery section:nth-child(even) .sectionTitulos{
     border-color: var(--CrCArteSec2);
 }
 

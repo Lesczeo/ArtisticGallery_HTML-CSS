@@ -63,7 +63,7 @@ html, body {
   margin: 0 50px 18px 50px;
 }
 
-.tituloSecao{
+.sectionTitulos{
   font-size: x-large;
   padding-bottom: 2%;
   margin-bottom: 3%;
@@ -99,30 +99,6 @@ html, body {
   font-weight: bold;
 }
 
-.botaoAno{
-  display: inline-grid;
-  place-content: center;
-  background-color: var(--CrEspecial1);
-  height: 50px;
-  min-width: 22%;
-  font-size: larger;
-  text-decoration: none;
-}
-
-.botaoTema{
-  background-color: var(--CrBtns1);
-  width: 32%;
-}
-
-.botaoTema img{
-  width: 45px;
-}
-
-.botoesAnos{
-  display: flex;
-  justify-content: space-between;
-}
-
 @media (max-width: 950px) {
   #PainelConteudo main section {
     padding: 2% 3%;
@@ -134,14 +110,11 @@ html, body {
 }
 
 @media (max-width: 580px) {
-  .tituloSecao{
+  .sectionTitulos{
     font-size: larger;
   }
   #PainelConteudo main section {
     padding: 2% 2%;
     margin: 0 12px 12px 12px;
-  }
-  .botaoTema{
-      max-width: 23%;
   }
 }

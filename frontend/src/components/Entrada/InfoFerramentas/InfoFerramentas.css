@@ -1,48 +1,48 @@
-.caixa_cartaoFerramenta{
+.box_DescFerramenta{
     display: inline-grid;
     grid-template-columns: 24% 24% 24% 24%;
     justify-content: space-between;
 }
 
-.cartaoFerramenta {
+.descFerramenta {
     padding: 0px 2%;
 }
 
-.caixa_Imagem_cartaoFerramenta{
+.box_ImgFerramenta{
     height: 100px;
     width: 100px;
     align-self: center;
     margin: 10px 0px;
 }
 
-.caixa_Imagem_cartaoFerramenta img{
+.box_ImgFerramenta img{
     height: 100%;
 }
-.caixa_Imagem_cartaoFerramenta img:hover{
+.box_ImgFerramenta img:hover{
     background-image: radial-gradient(circle, var(--CrBtns3)/* red */ 25%, transparent 70%);
 }
 
-.cartaoFerramenta p{
+.descFerramenta p{
     font-size: smaller;
 }
 
 @media (max-width: 950px) {
-    .caixa_cartaoFerramenta{
+    .box_DescFerramenta{
         grid-template-columns: 48% 48%;
     }
 
-    .cartaoFerramenta {
+    .descFerramenta {
         padding: 4% 2%;
     }
 
 }
 
 @media (max-width: 500px) {
-    .caixa_cartaoFerramenta{
-        display: block;
+    .box_DescFerramenta{
+        display: initial;
     }
 
-    .cartaoFerramenta {
+    .descFerramenta {
         padding: 2%;
     }
 

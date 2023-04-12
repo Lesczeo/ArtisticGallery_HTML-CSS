@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-#banner_Profile{
+#bannerProfile{
     max-width: 100%;
     margin-bottom: 3%;
   }
@@ -13,18 +13,18 @@
     justify-content: space-between;
 }
 
-#info .caixa_Imagem_Profile{
+#info .box_ImagemProfile{
     width: 24%;
     align-self: center;
 }
 
-#info .imagem_Profile{
+#info .imagemProfile{
     max-width: 75%;
     /* width: 52%; */
     align-self: center;
 }
 
-#info .imagem_Profile:hover{
+#info .imagemProfile:hover{
     transform: rotateY(180deg);
 }
 
@@ -35,17 +35,17 @@
 
 @media (max-width: 950px) {
 
-    #info .caixa_Imagem_Profile{
+    #info .box_ImagemProfile{
       display: none;
     }
-    #info .descricao_Secao{
+    #info .box_SectionTitulos{
       min-width: 100%;
     }
 }
 
 @media (max-width: 550px) {
 
-    #info .tituloSecao{
+    #info .sectionTitulos{
         width: 80%;
     }
 }
