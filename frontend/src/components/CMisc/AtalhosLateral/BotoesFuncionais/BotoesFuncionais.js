@@ -3,7 +3,7 @@ import { VoltarTopo } from '../../../../miscFunc.js';
 // React-Router-Dom links:
 import { Link } from 'react-router-dom';
 // Icones:
-import i8ODoor from '../../../../img/img_Icons8/open-door-50.png';
+import i8ODoor from '../../../img_Icons8/open-door-50.png';
 import i8UP2 from '../../../../img/img_Icons8/up-2-50.png';
 
 export function BotaoRetornoInicio() {

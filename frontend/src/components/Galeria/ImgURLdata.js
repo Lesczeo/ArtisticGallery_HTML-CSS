@@ -16,7 +16,10 @@ export const imgsDummLocal = [
     dummy6.default,
     dummy7.default,
     dummy8.default
-]*/
+]
+
+import DCbanner1 from '../Entrada/InfoIntro/Banner002.png';
+import DCbanner2 from '../../img/Banner001.png';*/
 
 export const imgsURLcArte = [
     "https://upload.wikimedia.org/wikipedia/en/5/5e/I_have_a_special_plan.jpg", // EasterEgg IHASPFTW

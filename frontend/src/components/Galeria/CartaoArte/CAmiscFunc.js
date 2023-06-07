@@ -1,8 +1,7 @@
 import { imgsURLcArte } from '../ImgURLdata.js';
 import MontaCartaoArte from './CartaoArte.js';
-/* test-purpose:
-import DCload from './PreviewCA/LoadingGif_Mn.gif'; */
 import DCbanner from '../../Entrada/InfoIntro/Banner002.png';
+import DecalFail from './OOPS_No_Valid_Image_V001.png';
 
 /*
     Aqui encontra-se códigos e funções mistas que apoiam a criação dos componentes
@@ -110,6 +109,13 @@ export function posRandom_RelTamMax(array){
     const posicao = Math.floor(Math.random() * array.length);
     return (posicao)
 }
+// Essa função garante que a imagem de erro apareça, se não é possível obter a imagem do desenho:
+export function ErroAoObterDesenho(evento) {
+    console.log(`Não é possível acessar o desenho em "${evento.target.src}"`);
+    evento.target.src = DecalFail // troca o link da imagem para o link padrão
+    evento.target.title = `Oops! Não encontrei esse desenho.. Será que sua conexão com a internet está ok? Tente mais tarde!`;
+}
+
 // Essa função pega um número aleatório de itens em um array, e cria um array novo com eles:
 function AgrupaDadosRandom(array){
     /*

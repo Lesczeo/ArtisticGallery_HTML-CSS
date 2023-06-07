@@ -1,4 +1,4 @@
-#filtro{
+#filtragem{
     display: flex;
     flex-direction: column;
     background-color: var(--CrDivSec1);
@@ -6,109 +6,78 @@
     margin: 0 50px 18px 50px;
 }
 
-.navegacao{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
-}
+    .navegacao{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
 
-.botaoEntrada{
-    display: none;
-}
+        .navegacao .sectionTitulos{
+            width: 40%;
+            margin-bottom: 0px;
+            border-color: var(--CrDivSec2);
+        }
 
-#filtro .sectionTitulos{
-    width: 40%;
-    margin-bottom: 0px;
-    border-color: var(--CrDivSec2);
-}
+    .botoesFiltro{
+        display: flex;
+        justify-content: space-between;
+        min-height: 35px;
+    }
 
-.filtros{
-    display: flex;
-    justify-content: space-between;
-    min-height: 35px;
-}
+        .botoesFiltro__child{
+            display: flex;
+            justify-content: center;
+            gap: 4%;
+        }
 
-.child_filtros{
-    display: flex;
-    justify-content: center;
-    min-width: 50%;
-    gap: 4%;
-}
+            .botoesFiltro__child__text{
+                place-self: center;
+                color: var(--CrEspecial2);
+            }
+            
+            .botoesFiltro__child__form{
+                border-radius: 3px;
+                border-width: 0px;
+                background-color: var(--CrEspecial1);
+                padding-left: 5px;
+                min-width: 25%;
+            }
+            .botoesFiltro__child__form:focus-visible{
+                transition: outline-offset 0.2s linear;
+                outline-width: 4px;
+                outline-style: dashed;
+                outline-color: var(--CrEspecial2);
+                outline-offset: -3px;
+            }
 
-/*
-.caixa_Filtros{
-    display: flex;
-    justify-content: space-between;
-}
-
-.caixa_botoesFiltro{ 
-    min-width: 55%;
-}
-.caixa_botoesFiltroAno{
-    display: flex;
-    justify-content: space-between;
-}
-.caixa_botoesFiltroTema{
-    display: none;
-}
-.botaoFiltroAno{
-    background-color: var(--CrEspecial1);
-    height: 50px;
-    min-width: 23%;
-}
-
-#pesquisaFiltro{
-    background-color: var(--CrEspecial1);
-    min-width: 42%;
-    border-radius: 10px;
-    border-width: 0px;
-    height: 50px;
-    text-indent: 10px;
-    font-weight: bold;
-}
-#pesquisaFiltro:focus-visible{
-    transition: outline-offset 0.3s linear;
-    outline-width: 4px;
-    outline-style: dashed;
-    outline-color: var(--CrEspecial2);
-    outline-offset: -3px;
-}
-#pesquisaFiltro::placeholder { //Chrome, Firefox, Opera, Safari 10.1+
-    color: var(--CrDivSec1);
-    opacity: 1; //Firefox Exclusive
-}
-#pesquisaFiltro::-ms-input-placeholder { //Microsoft Edge
-    color: var(--CrDivSec1);
-}
-*/
+            .botoesFiltro__child__btn{
+                background-color: var(--CrEspecial1);
+                min-width: 42%;
+                border-radius: 10px;
+                border-width: 0px;
+                height: 50px;
+                font-weight: bold;                
+            }
 
 @media (max-width: 950px) {
-    #filtro{
+    #filtragem{
         padding: 2% 3%;
         margin: 0 18px 18px 18px;
     }
-    #filtro .sectionTitulos{
+    .navegacao .sectionTitulos{
         width: 65%;
     }
 }
 
 @media (max-width: 725px) {
-    /* .filtros{
+    .botoesFiltro{
         flex-direction: column;
-    } */
-
-    #pesquisaFiltro{
-        min-width: 95%;
-        margin-top: 2%;
-    }
-    .caixa_botoesFiltroAno{
-        min-width: 100%;
     }
 
 }
 
 @media (max-width: 580px) {
-    #filtro{
+    #filtragem{
         padding: 2% 2%;
         margin: 0 12px 12px 12px;
     }
@@ -117,32 +86,6 @@
         justify-content: space-around;
         margin-bottom: 4%;
         margin-top: 2%;
-    }
-
-    .botaoEntrada{
-        display: block;
-        width: 125%;
-        background-color: var(--CrBtns1);
-    }
-    .botaoEntrada img{
-        width: 45px;
-    }
-    
-    .caixa_botoesFiltro{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .caixa_botoesFiltroAno{
-        min-width: 55%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 2%;
-    }
-
-    .caixa_botoesFiltroTema{
-        display: flex;
-        justify-content: space-between;
     }
 
 }

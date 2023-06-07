@@ -1,9 +1,18 @@
 .previewCA{
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemCA{
+    object-fit: cover;
     border-radius: 10px;
+    height: 90%;
+    width: 90%;
     aspect-ratio: 1/1;
 }
-.previewCA:hover{
+
+/*.previewCA:hover{
     cursor: zoom-in;
 }
 
@@ -14,21 +23,10 @@
     aspect-ratio: 1/1;
 }
 
-.imagemCA{
-    object-fit: cover;
-    flex: auto;
-    aspect-ratio: 1/1;
-    max-width: 95%;
-    max-height: 95%;
-    border-radius: 10px;
-    /* Para imagens menores:
-    image-rendering: pixelated; */
-}
-
 .zoomImgHover:hover{
   transform: scale(1.025);
   transition: 0.5s cubic-bezier(0, 0, 0, 1.2);
-}
+}*/
 
 @media (max-width: 950px) {
     .previewCA{

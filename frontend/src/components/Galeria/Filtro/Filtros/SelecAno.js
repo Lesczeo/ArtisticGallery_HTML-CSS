@@ -1,9 +1,8 @@
-import './SelectAno.css';
-import { DataAtual } from '../../../../miscFunc';
+import { DataAtual } from '../../../../miscFunc.js';
 // React-Router-Dom links:
 // import { useHistory } from 'react-router-dom';
 
-export default function SlcAno() {
+export default function SelecAno() {
     // Pega o dia atual e extrai o ano para usar como métrica em <option>:
 	const date = DataAtual("Ano");
 
@@ -14,11 +13,11 @@ export default function SlcAno() {
     }*/
 
     return (
-        <div className='filtros'>
-            <label className='labelItem'>Desenhos por ano?</label>
+        <div className='botoesFiltro__child'>
+            <label className='botoesFiltro__child__text'>Desenhos por ano?</label>
             <select
             // onChange={event => handleChange(event.target.value)}
-            className='notLabelItem'>
+            className='botoesFiltro__child__form'>
                 <option value="allyrs">Todos os anos</option>
                 <option value="newest">{date} em diante</option>
                 <option value="recent">{date-1} em diante</option>

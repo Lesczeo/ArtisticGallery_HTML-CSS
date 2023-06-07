@@ -1,7 +1,7 @@
 #mainGallery{
     --CrCArtePri1: antiquewhite;
-    --CrCArtePri2: burlywood;
-    --CrCArteSec1: peachpuff;
+    --CrCArtePri2: peachpuff;
+    --CrCArteSec1: burlywood;
     --CrCArteSec2: darksalmon;
 }
 
@@ -12,29 +12,25 @@
     margin: 0 50px;
 }
 
-#mainGallery section {
-    background-color: var(--CrCArtePri1);
-}
+    .cartoesArte{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px !important;
+    }
 
-#mainGallery section .previewCA{
-    background-color: var(--CrCArtePri2);
-}
+        .cartoesArte .cartaoArte {
+            background-color: var(--CrCArtePri1);
+        }
+        .cartoesArte .cartaoArte .infoCA_hr{
+            color: var(--CrCArteSec1);
+        }
 
-#mainGallery section .sectionTitulos{
-    border-color: var(--CrCArtePri2);
-}
-
-#mainGallery section:nth-child(even) {
-    background-color: var(--CrCArteSec1);
-}
-
-#mainGallery section:nth-child(even) .previewCA{
-    background-color: var(--CrCArteSec2);
-}
-
-#mainGallery section:nth-child(even) .sectionTitulos{
-    border-color: var(--CrCArteSec2);
-}
+        .cartoesArte .cartaoArte:nth-child(even) {
+            background-color: var(--CrCArtePri2);
+        }
+        .cartoesArte .cartaoArte:nth-child(even) .infoCA_hr{
+            color: var(--CrCArteSec2);
+        }
 
 @media (max-width: 950px) {
     #mainGallery footer {

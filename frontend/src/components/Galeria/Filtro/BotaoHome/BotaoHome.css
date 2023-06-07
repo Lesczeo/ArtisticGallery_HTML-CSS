@@ -1,0 +1,14 @@
+.botaoEntrada{
+    display: none;
+}
+
+@media (max-width: 580px) {
+    .botaoEntrada{
+        display: block;
+        width: 125%;
+        background-color: var(--CrBtns1);
+    }
+    .botaoEntrada img{
+        width: 45px;
+    }
+}

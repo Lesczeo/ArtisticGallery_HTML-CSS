@@ -26,8 +26,8 @@ function AtalhosLateral() {
     <div id="listaDeAtalhos">
       <div id="stickyBox">
         {/*
-          Botão que traz o usuário à entrada. Só aparece
-          quando o endereço é a galeria dos cartões arte:
+          Botão que traz o usuário à entrada. Só aparece quando o
+          endereço é a galeria dos cartões arte:
         */
         location.pathname === "/galeria" && <BF.BotaoRetornoInicio/> }
         <div id="listaBotoesAtalhos">

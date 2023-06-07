@@ -1,58 +1,122 @@
 .cartaoArte{
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 46% 50%;
-    grid-template-rows: 100%;
+    /*display: flex;
     border-radius: 10px;
     max-height: 500px;
-    overflow: auto;
+    overflow: auto;*/
+    margin: 2% 2%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
 }
 
-.descricaoCA{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px 4%;
-    overflow: auto;
+    .cartaoArte__content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+
+        .cartaoArte__content__child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+            .imagemCA{
+                object-fit: cover;
+                border-radius: 10px;
+                height: 90%;
+                width: 90%;
+                aspect-ratio: 1/1;
+            }
+        
+        .infoCA{
+            flex-direction: column;
+            transform: rotateY(180deg);
+            /*display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0px 4%;
+            overflow: auto;*/
+        }
+            .infoCA:nth-child(){
+                width: 75%;
+            }
+
+            .infoCA_Nome{
+                width: 75%;
+                font-size: larger;
+                font-weight: bold;
+            }
+            
+            .infoCA_hr{
+                width: 60%;
+                border-style: dashed;
+            }
+
+.cartaoArte:hover .cartaoArte__content {
+    transform: rotateY(180deg);
 }
 
-.descricaoCA .sectionTitulos{
-    font-size: larger;
-    font-weight: bold;
-}
+        .previewCA, .infoCA {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /*Safari*/
+            backface-visibility: hidden;
+        }
 
-.descricaoCA p{
+/* .infoCA p{
     margin: 2% 0px;
 }
 
-.mainDescricaoCA{
-    text-align: justify;
-    font-style: italic;
-}
-
-/* scrollbar customizada */
-.descricaoCA::-webkit-scrollbar {
+scrollbar customizada
+.infoCA::-webkit-scrollbar {
     width: 10px;
 }
-.descricaoCA::-webkit-scrollbar-track {
+.infoCA::-webkit-scrollbar-track {
     background: transparent;
 }
-.descricaoCA::-webkit-scrollbar-thumb {
+.infoCA::-webkit-scrollbar-thumb {
     background-color: var(--CrBtns1);
     border-radius: 4px;
 }
-  
-@media (max-width: 675px) {/*  */
-    .cartaoArte{
+
+@media (max-width: 950px) {
+    .previewCA{
+        text-align: start;
+    }
+    // Emoji de lupa antes do título, indicando zoom ao clicar (sem cursor):
+    .previewCA::before{
+        content: "\01F50D ";
+        position: absolute;
+        margin: 12px 0 0 12px;
+    }
+}
+*/
+
+@media (max-width: 675px) {
+
+    .previewCA{
+        margin-bottom: 2%;
+    }
+    
+    /*  .cartaoArte{
         display: flex;
         flex-direction: column;
         max-height: 800px;
     }
     
-    .descricaoCA{
+    .infoCA{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
+
+    .previewCA::before{
+        margin: 16px 0 0 16px;
+        font-size: larger;
+    } */
 }
